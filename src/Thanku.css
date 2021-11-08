@@ -1,0 +1,8 @@
+.thanku {
+  text-align: center;
+  display: flex;
+  flex-direction: column;
+  font-weight: 600;
+  margin-top: 100px;
+  font-size: large;
+}

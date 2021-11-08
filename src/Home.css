@@ -1,0 +1,25 @@
+.home__image {
+  width: 100%;
+  z-index: -1;
+  margin-bottom: -150px;
+  mask-image: linear-gradient(to bottom, rgb(2, 2, 2), rgba(0, 0, 0, 0));
+}
+
+/* .home {
+  display: flex;
+  justify-content: center;
+  margin-left: 50px;
+  margin-right: 50px;
+  max-width: 4000px;
+} */
+
+ {
+  /*This code is for specifying every product in rows*/
+}
+
+.home__row {
+  display: flex;
+  z-index: 1;
+  margin-left: 5px;
+  margin-right: 5px;
+}
