@@ -5,9 +5,13 @@
   height: max-content;
 }
 .checkout__add {
-  margin-bottom: 10px;
+  margin-bottom: 100px;
   width: 100%;
   background-color: wheat;
+  margin-top: -20px;
+  margin-left: -20px;
+  margin-right: 50px;
+  height: auto;
 }
 
 .checkout__title {

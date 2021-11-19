@@ -6,7 +6,7 @@ function Home() {
         <div className="home">
             <div className="home__container">
                  <img className="home__image" 
-                 src="https://betanews.com/wp-content/uploads/2016/07/Primeday-banner.jpg"/>
+                 src="https://m.media-amazon.com/images/I/61DUO0NqyyL._SX3000_.jpg"/>
                  <div className="home__row">
                      <Product title="2021 Apple 10.2-inch iPad (Wi-Fi, 64GB)- Space Gray"
                      price={95000}
