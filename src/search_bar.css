@@ -1,0 +1,13 @@
+.container {
+  display: flex;
+  flex-direction: row;
+}
+/* Style to create scroll bar in dropdown */
+.scrollable-dropdown {
+  height: auto;
+  max-height: 320px; /* Increase / Decrease value as per your need */
+  overflow-x: hidden;
+}
+.search_concept {
+  background-color: brown;
+}
