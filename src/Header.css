@@ -26,7 +26,7 @@
 }
 
 .header_searchInput {
-  height: 12px;
+  height: 13px;
   padding: 18px;
   border: none;
   width: 100%;
@@ -38,10 +38,10 @@
   background-color: orange;
 }
 .header__optionLineOne {
-  font-size: 10px;
+  font-size: 15px;
 }
 .header__optionLineTwo {
-  font-size: 13px;
+  font-size: 16px;
   font-weight: 800;
 }
 
@@ -67,3 +67,5 @@
   margin-left: 10px;
   margin-right: 10px;
 }
+
+
