@@ -13,6 +13,7 @@ import Payment from "./Payment";
 import {Elements} from '@stripe/react-stripe-js';
 import {loadStripe} from '@stripe/stripe-js';
 import Thanku from './Thanku'
+import Footer from './Footer';
 
 
 
@@ -51,9 +52,8 @@ const[{},dispatch]=useStateValue();
   return (
     <Router>
     <div className="App">
-      
       <Switch>
-
+      
       <Route path="/thanku">
         <Header/>
           <Thanku/>
@@ -81,6 +81,7 @@ const[{},dispatch]=useStateValue();
       <Home/>
       </Route>
       </Switch>
+      <Footer/>
     </div>
     </Router>
   );
