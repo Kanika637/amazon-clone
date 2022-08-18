@@ -23,6 +23,11 @@
 }
 .product__rating {
   display: flex;
+  align-items: center;
+}
+.product__reviews {
+  margin-left: 0.25rem;
+  color: #257e8e;
 }
 .product_info {
   height: 100px;
