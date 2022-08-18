@@ -13,7 +13,7 @@ import Payment from "./Payment";
 import {Elements} from '@stripe/react-stripe-js';
 import {loadStripe} from '@stripe/stripe-js';
 import Thanku from './Thanku';
-import Searchbar from './Searchbar';
+
 // import Footer from './Footer';
 
 
@@ -53,7 +53,7 @@ const[{},dispatch]=useStateValue();
   return (
     <Router>
     <div className="App">
-      <Searchbar/>;
+
       <Switch>
       
       <Route path="/thanku">
