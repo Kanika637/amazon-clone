@@ -12,7 +12,7 @@ There is plenty of work which can be done on this project which means plenty of 
 
 -> Now you can clone the project on your local machine using the command `git clone https://github.com/Kanika637/amazon-clone.git` <br>
 -> Change the directory to this project, `cd amazon-clone` <br>
--> Install all the dependicies using the command `npm i` <br>
+-> Install all the dependencies using the command `npm i` <br>
 -> Every contributor should make a new branch with this command `git checkout -b "Your Branch Name"` <br>
 
 ![image](https://user-images.githubusercontent.com/84350895/185337705-816d01c9-9700-48c3-b4ff-bbe6f54a2ab5.png)
