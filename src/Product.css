@@ -33,11 +33,20 @@
   margin-top: 5px;
 }
 .product__button {
-  background: #f0c14b;
-  border: 1px solid;
   margin-top: 10px;
   border-color: #a88734 #9c7e31 #846a29;
   color: #111;
+  background-color: #ffd814;
+  border: none;
+  width: 95%;
+  padding: 0.4rem 0;
+  max-width: 200px;
+  border-radius: 12px;
+}
+
+.product__button:hover {
+  background-color: #f7ca00;
+  cursor: pointer;
 }
 
 .buy_button {
