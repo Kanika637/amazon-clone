@@ -4,7 +4,7 @@ Are you starting out with React.js library, I love it, its my favourite library 
 This is my first project when I started my developement journey and now I wanna help all those begginers who are starting with their developement journey.
 There is plenty of work which can be done on this project which means plenty of issues and plenty of PRs.
 
-# Let's see how to play around with this
+# Let's see how to play around with this🚀
 
 -> First step is to Fork the project 
 
