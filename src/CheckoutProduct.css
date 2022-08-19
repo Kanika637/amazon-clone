@@ -1,5 +1,6 @@
 .checkoutproduct__rating {
   display: flex;
+  align-items: center;
 }
 
 .checkoutProduct {
