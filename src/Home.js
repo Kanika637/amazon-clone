@@ -34,7 +34,7 @@ function Home() {
                  reviews={891}/>
                  <Product title="Amazon Essentials Women's Studio Terry Relaxed-Fit"
                  price={1700}
-                 image="https://m.media-amazon.com/images/I/816A14tEg1L._AC_UL480_FMwebp_QL65_.jpg"
+                 image="https://m.media-amazon.com/images/I/71d9baOAapL._AC_UX342_.jpg"
                  rating={5}
                  reviews={114}/>
                      </div>
