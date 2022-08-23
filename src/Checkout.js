@@ -35,6 +35,7 @@ function Checkout() {
                         rating={item.rating}
                         title={item.title}
                         image={item.image}
+                        reviews={item.reviews}
                         />
                         ))}
                     
