@@ -22,7 +22,7 @@ function Checkout() {
         <div className="checkout">
             
             <div className="checkout__left">
-                <img  className="checkout__add"src="https://th.bing.com/th/id/R.80ae5f35f1c44b0f930163d23226366c?rik=%2bJmqA3%2bhXOe%2byw&riu=http%3a%2f%2fwww.newburyportef.org%2fwp-content%2fuploads%2f2016%2f11%2famazon_smile_newbanner.png&ehk=QYz%2b3M45putNX9M8TW4b9l%2fDWCIrYVY34oQs0qJZQCA%3d&risl=&pid=ImgRaw&r=0"/>
+                <img  className="checkout__add"src="https://th.bing.com/th/id/R.80ae5f35f1c44b0f930163d23226366c?rik=%2bJmqA3%2bhXOe%2byw&riu=http%3a%2f%2fwww.newburyportef.org%2fwp-content%2fuploads%2f2016%2f11%2famazon_smile_newbanner.png&ehk=QYz%2b3M45putNX9M8TW4b9l%2fDWCIrYVY34oQs0qJZQCA%3d&risl=&pid=ImgRaw&r=0" alt="Checkout Add"/>
                 <div>
                     <h3>Hello, {user?.email}</h3>
                     <h1 className="checkout__title">Your Shopping Basket</h1>

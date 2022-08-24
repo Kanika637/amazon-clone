@@ -39,7 +39,7 @@ function Login() {
     return (
         <div className="login">
             <Link to="/"> 
-            <img  className="login__img"  src="https://th.bing.com/th/id/OIP.Ku4iy6JfyZOZAKxOkfp0ewHaEK?pid=ImgDet&rs=1"/>
+            <img  className="login__img"  src="https://th.bing.com/th/id/OIP.Ku4iy6JfyZOZAKxOkfp0ewHaEK?pid=ImgDet&rs=1" alt="Login"/>
         </Link>
         <div className="login__container">
             <h1 className="login__sign">Sign In</h1>
