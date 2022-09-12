@@ -50,6 +50,7 @@
 
 .product__button:hover {
   background-color: #ff9900;
+  cursor: pointer;
 }
 
 .buy_button {
