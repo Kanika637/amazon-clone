@@ -57,7 +57,17 @@
   margin-left: 50px;
   margin-right: 10px;
   color: white;
+
 }
+
+.header__option a:hover, a:visited, a:link, a:active {
+
+  text-decoration: none!important;
+
+  -webkit-box-shadow: none!important;
+  box-shadow: none!important;
+}
+
 .header__optionBasket {
   color: white;
   display: flex;
@@ -66,6 +76,7 @@
 .header__basketCount {
   margin-left: 10px;
   margin-right: 10px;
+ 
 }
 
 
