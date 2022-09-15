@@ -1,0 +1,11 @@
+main_nav {
+    float: left;
+  }
+  
+  main_nav a {
+    display: inline-block;
+    color: white;
+    text-align: center;
+    padding: 16px;
+    text-decoration: none;
+  }
