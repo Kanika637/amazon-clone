@@ -3,24 +3,29 @@
   flex-direction: column;
   justify-content: space-between;
   width: 300px;
-  height: 100px;
+  line-height: 25px;
   padding: 20px;
+  margin-top: 5px; 
   background-color: #f3f3f3;
   border: 1px solid #dddddd;
   border-radius: 3px;
-  margin-left: 35px;
-  
+
 }
+
+
 .subtotal__gift {
   display: flex;
   align-items: center;
 }
 .proceed__button {
-  background: #f0c14b;
+  background: #FFA500;
   width: 100%;
   height: 30px;
   border: 1px solid;
   margin-top: 10px;
-  border-color: #a88734 #9c7e31 #846a29;
+  padding: 5px; 
+  border: 1px solid #FFA500; 
   color: black;
+  cursor: pointer;
+
 }

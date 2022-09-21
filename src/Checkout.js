@@ -17,16 +17,25 @@ function Checkout() {
     );
 
 
-      
     return (
         <div className="checkout">
             
             <div className="checkout__left">
-                <img  className="checkout__add"src="https://th.bing.com/th/id/R.80ae5f35f1c44b0f930163d23226366c?rik=%2bJmqA3%2bhXOe%2byw&riu=http%3a%2f%2fwww.newburyportef.org%2fwp-content%2fuploads%2f2016%2f11%2famazon_smile_newbanner.png&ehk=QYz%2b3M45putNX9M8TW4b9l%2fDWCIrYVY34oQs0qJZQCA%3d&risl=&pid=ImgRaw&r=0"/>
-                <div>
-                    <h3>Hello, {user?.email}</h3>
-                    <h1 className="checkout__title">Your Shopping Basket</h1>
-                    
+
+                <div className='hero__strip'> 
+                    {/* <img  className="checkout__img"src="https://images.unsplash.com/photo-1556742502-ec7c0e9f34b1?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxzZWFyY2h8MXx8YnV5aW5nfGVufDB8fDB8fA%3D%3D&auto=format&fit=crop&w=500&q=60"/> */}
+                </div> 
+
+                {/* I kept this commented below just in case you would like to revert back to the original design */}
+                {/* <img  className="checkout__add"src="https://th.bing.com/th/id/R.80ae5f35f1c44b0f930163d23226366c?rik=%2bJmqA3%2bhXOe%2byw&riu=http%3a%2f%2fwww.newburyportef.org%2fwp-content%2fuploads%2f2016%2f11%2famazon_smile_newbanner.png&ehk=QYz%2b3M45putNX9M8TW4b9l%2fDWCIrYVY34oQs0qJZQCA%3d&risl=&pid=ImgRaw&r=0" alt="Checkout Add"/> */}
+                
+                
+                <div className='block__2'>
+                    <div className='checkout__card'>
+
+                        <h3>Hello, {user?.email}</h3>
+                        <h1 className="checkout__title">Your Shopping Basket</h1>
+
                         {/*This will send all the products we are adding in our basket to the shopping list using the basket variable*/}
                         {basket.map((item)=>(
                         <CheckoutProduct
@@ -37,13 +46,13 @@ function Checkout() {
                         image={item.image}
                         />
                         ))}
-                    
+
+                        <div className="checkout__right">
+                            <Subtotal/>
+                        </div>
+                    </div>
                 </div>
             </div>
-            <div className="checkout__right">
-                <Subtotal/>
-            </div>
-
 
         </div>
     )
