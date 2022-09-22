@@ -20,7 +20,7 @@
   background-image: url('https://th.bing.com/th/id/R.80ae5f35f1c44b0f930163d23226366c?rik=%2bJmqA3%2bhXOe%2byw&riu=http%3a%2f%2fwww.newburyportef.org%2fwp-content%2fuploads%2f2016%2f11%2famazon_smile_newbanner.png&ehk=QYz%2b3M45putNX9M8TW4b9l%2fDWCIrYVY34oQs0qJZQCA%3d&risl=&pid=ImgRaw&r=0');
   background-size: cover;
   background-repeat: no-repeat;
-  background-position: 0px -50px; 
+  background-position: 0px -80px; 
   /* z-index: 0;  */
 }
 
@@ -33,7 +33,7 @@
 }
 
 .checkout__card {
-  margin: -80px auto 0px auto; 
+  margin: -60px auto 0px auto; 
   padding: 40px; 
   background-color: rgb(241, 240, 240);
   border-radius: 10px;
