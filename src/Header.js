@@ -5,6 +5,8 @@ import ShoppingBasketIcon from "@material-ui/icons/ShoppingBasket";
 import {Link} from "react-router-dom";
 import {useStateValue} from "./StateProvider";
 import {auth} from "./firebase";
+import AddShoppingCartIcon from '@mui/icons-material/AddShoppingCart';
+
 function Header() {
     const[{basket,user},dispatch]=useStateValue();  
 
@@ -65,7 +67,8 @@ function Header() {
                 </div>
                 <Link to="/checkout">
                 <div className="header__optionBasket">
-                    <ShoppingBasketIcon/>
+                  
+                    <AddShoppingCartIcon fontSize='large'/>
                     <span classNAme="header__optionLineTwo header__basketCount">{basket?.length}</span>
                 </div>
                 </Link>
@@ -78,3 +81,4 @@ function Header() {
 }
 
 export default Header
+
