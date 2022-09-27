@@ -1,11 +1,11 @@
 import React from 'react'
 import './Header.css' 
-import SearchIcon from "@material-ui/icons/Search";
-import ShoppingBasketIcon from "@material-ui/icons/ShoppingBasket";
+ 
 import {Link} from "react-router-dom";
 import {useStateValue} from "./StateProvider";
 import {auth} from "./firebase";
 import AddShoppingCartIcon from '@mui/icons-material/AddShoppingCart';
+import HeaderSearchBar from './HeaderSearchBar';
 
 function Header() {
     const[{basket,user},dispatch]=useStateValue();  
@@ -27,8 +27,7 @@ function Header() {
           </Link>
         <div
         className="header__search">
-            <input className="header__searchInput" type="text"/>
-            <SearchIcon className="header__searchIcon"/>
+          <HeaderSearchBar/> 
             <div className="header__nav">
                 {/*if there is no user then only go to login pg*/}
                 <Link to={!user && "/login"}>
