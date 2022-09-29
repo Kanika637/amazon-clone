@@ -125,7 +125,7 @@ const [visible, setVisible] = useState(false)
       <div className='footer-line'>
       </div>
         <div className="rest-footer-2">
-            <img src="" alt="logo"></img>
+            <img src="public\amazon-logo.png" alt="logo"></img>
         </div>
         <div className="base">
             <div className='upper-base'>
