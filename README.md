@@ -17,7 +17,7 @@ Having numerous means of contributing means working with alot of individuals whi
 # Things to take care while making a PR:
 
 - Don't forget to attach a screenshot of the final output of the work that you have done, and do mention the issue you have worked upon, while making a PR.
-- Just make sure that you push only the files that you have worked upon, don't push package.json, and package-lock.json.
+- Just make sure that you push only the files that you have worked upon.
 
 # Your First Contribution
 
@@ -114,9 +114,9 @@ git pull upstream main
 You can now update your branch from your local copy of main, and push it!. See how below. 👇
 
 ```
-git checkout #343-make a request
-git rebase main
-git push --set-upstream origin #343-make a request
+git add .
+git commit -m "<your commit message>"
+git push origin <name-of-your-branch>
 ```
 
 Hurray!!, we are done with the hard part. Head to github to make the pull request Github will check for conflicts and if non is found, you can make the pull request and the mainteners of amazon clone will review your pull request to have it merged or make a comment on it.
