@@ -136,5 +136,9 @@ Amazon-clone has certain conventions that should be adopted when contributing.
 - Commit changes to `package.json`, `.gitignore` and other meta files with `chore(filenamewithoutext): ...`
 - Commit changes to README files or comments with `docs: ...`
 - Cody style changes with `style: standard`
+## Thanks to all Contributors
 
+<a href="https://github.com/Kanika637/amazon-clone/graphs/contributors"> 
+<img src="https://contrib.rocks/image?repo=Kanika637/amazon-clone" /> 
+</a>
 
