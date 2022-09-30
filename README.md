@@ -14,6 +14,11 @@ Having numerous means of contributing means working with alot of individuals whi
 - Respect 👨🏾‍🤝‍👨🏽. Having respect for everyone, their skills and opinions is paramount.
 - Welcoming tone 😇💃: It is expected that you interact with others in an optimistic and cheerful manner.
 
+# Things to take care while making a PR:
+
+- Don't forget to attach a screenshot of the final output of the work that you have done, and do mention the issue you have worked upon, while making a PR.
+- Just make sure that you push only the files that you have worked upon, don't push package.json, and package-lock.json.
+
 # Your First Contribution
 
 Is this your first time contributing to an open source project? If yes, Welcome!!✨🎉💃🏾 Here is a [great tutorial](https://app.egghead.io/playlists/how-to-contribute-to-an-open-source-project-on-github) on how to contribute to an open source project.
