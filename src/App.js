@@ -16,6 +16,7 @@ import Thanku from './Thanku';
 import Navbar from './Navbar';
 
 import Footer from './Footer';
+import Customer from './Customer';
 
 
 
@@ -64,6 +65,11 @@ const[{},dispatch]=useStateValue();
       
           <Thanku/>
           </Route>
+          <Route path="/customer">
+        <Header/>
+      
+          <Customer/>
+          </Route>
         <Route path="/Payment">
           <Header/>
           {/* wraps the payment elements,
@@ -88,6 +94,7 @@ const[{},dispatch]=useStateValue();
       <Home/>
    
       </Route>
+     
       </Switch>
       <Footer/>
     </div>

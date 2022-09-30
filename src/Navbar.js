@@ -1,6 +1,11 @@
 import React from "react";
 import "./Navbar.css";
+
 function Navbar() {
+
+
+
+
   return (
     <div>
       <nav
@@ -30,9 +35,10 @@ function Navbar() {
         <a class="navbar-brand white-text mr-auto" href="#" style={{fontSize:"13px",  marginLeft:"-760px"}}>
           Buy Again
         </a>
-        <a class="navbar-brand white-text mr-auto" href="#" style={{fontSize:"13px",  marginLeft:"-760px"}}>
+       <a class="navbar-brand white-text mr-auto" href="/customer" style={{fontSize:"13px",  marginLeft:"-760px"}}>
           Customer services
         </a>
+      
         <a class="navbar-brand white-text mr-auto" href="#" style={{fontSize:"13px",  marginLeft:"-760px"}}>
           Gift Cards
         </a>

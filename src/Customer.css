@@ -1,0 +1,42 @@
+.custom-all{
+    padding: 40px 100px;
+}
+.custom-in h2{
+    font-weight: 500;
+}
+.custom-in h3{
+    font-weight: 500;
+}
+
+.box{
+    display: flex;
+    padding: 10px 10px;
+    border: 1px solid rgb(198, 183, 211);
+    border-radius: 1rem;
+    gap: 20px;
+    width: 350px;
+}
+.text{
+    display: flex;
+    flex-direction: column;
+}
+.text h5{
+    font-weight: 400;
+}
+.cover{
+    display: flex;
+    flex-wrap: wrap;
+    gap: 20px;
+    /* border: 1px solid red; */
+}
+.sub{
+    color: grey;
+}
+.se{
+    font-weight: 500;
+}
+.search{
+    width: 100%;
+   border: 1px solid black;
+   background: none;
+}
