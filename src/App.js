@@ -15,7 +15,7 @@ import {loadStripe} from '@stripe/stripe-js';
 import Thanku from './Thanku';
 import Navbar from './Navbar';
 
-// import Footer from './Footer';
+import Footer from './Footer';
 
 
 
@@ -89,7 +89,7 @@ const[{},dispatch]=useStateValue();
    
       </Route>
       </Switch>
-      {/* <Footer/> */}
+      <Footer/>
     </div>
     </Router>
     </>
