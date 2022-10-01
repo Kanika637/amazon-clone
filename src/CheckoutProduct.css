@@ -29,4 +29,25 @@
 .checkoutProduct__title {
   font-size: 17px;
   font-weight: 800;
+  float: left;
+  width: 600px;
+}
+
+.checkoutproduct__rating{
+  position: relative;
+  right: 0;
+  margin-right: 10px;
+}
+
+.checkout_Alignment{
+  display: inline-block;
+  margin: auto;
+  margin: auto;   
+}
+
+.checkoutproduct__price{
+  text-align: left;
+  float: left;
+  width: 200px;
+  margin-left: 5rem;
 }
