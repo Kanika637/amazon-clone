@@ -6,11 +6,11 @@ Finally, we can't wait to see your outstanding issues and pull requests. Welcome
 
 # Ground Rules
 
-Here at amazon clone, we welcome everyone to contriubute to our project. You can contribute in several ways not just in code (E.g. Technical writing).
+Here at amazon clone, we welcome everyone to contribute to our project. You can contribute in several ways not just in code (E.g. Technical writing).
 
 Having numerous means of contributing means working with alot of individuals which is very good for the growth 📈 of the project but most times can lead to conflicting interests and point of views 👈👉. Below are set of rules 📖 that guide individuals participating in this project.
 
-- Openess 👐. Collaboration is only possible if everyone is open to share ideas.
+- Openness 👐. Collaboration is only possible if everyone is open to share ideas.
 - Respect 👨🏾‍🤝‍👨🏽. Having respect for everyone, their skills and opinions is paramount.
 - Welcoming tone 😇💃: It is expected that you interact with others in an optimistic and cheerful manner.
 
@@ -23,13 +23,13 @@ Having numerous means of contributing means working with alot of individuals whi
 
 Is this your first time contributing to an open source project? If yes, Welcome!!✨🎉💃🏾 Here is a [great tutorial](https://app.egghead.io/playlists/how-to-contribute-to-an-open-source-project-on-github) on how to contribute to an open source project.
 
-At the point you are ready to take on the world of open source contribution!!.
+At this point you are ready to take on the world of open source contribution!!.
 
 You must have seen a bug or problem you can fix, this is when you open a new issue for that problem. Let's do it together.
 
 ## Steps to open a new issue
 
-- **Step 1:** Navigate to the issues naviagtion button. See below 👇
+- **Step 1:** Navigate to the issues navigation button. See below 👇
 
 ![issues1](https://user-images.githubusercontent.com/63567230/186288743-ea5b1764-b26c-49f5-a740-766b81680ee7.JPG)
 
@@ -41,7 +41,7 @@ You must have seen a bug or problem you can fix, this is when you open a new iss
 
 ![issues3](https://user-images.githubusercontent.com/63567230/186288798-28a7e5b1-2f3e-4fa1-9ebb-27fe2220290f.JPG)
 
-- **Step 4:** Time to add your amazing issue. You add the title and a brief description of the issue. For further explanation, images can be added as well. See below 👇
+- **Step 4:** Time to add your amazing issue. You have to add the title and a brief description of the issue. For further explanation, images can be added as well. See below 👇
 
 ![issues4](https://user-images.githubusercontent.com/63567230/186288817-9c257618-005b-4ced-993b-318f51121137.JPG)
 
