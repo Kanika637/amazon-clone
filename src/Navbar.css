@@ -9,3 +9,34 @@ main_nav {
     padding: 16px;
     text-decoration: none;
   }
+
+  .navbar__img{
+    height:40px;
+    width: 40px;
+    margin-right: 5px;
+    
+  }
+  .navbar__complete{
+    display: flex;
+   
+    align-items: center;
+    justify-content: space-between;
+    margin-right: 650px;
+  
+  }
+  
+
+  .navbar__complete > a{
+    display: flex;
+    align-items: center;
+   
+    margin-left: 23px;
+
+  }
+  .navbar__right{
+    display: flex;
+   align-items: center;
+ 
+  }
+
+
