@@ -49,7 +49,6 @@ You must have seen a bug or problem you can fix, this is when you open a new iss
 
 ![issues5](https://user-images.githubusercontent.com/63567230/186289012-575123a1-68a7-4fcd-a71a-9051a8ca11ff.JPG)
 
-
 Hurray, you just made added your first issue. The managers of amazon clone will now review your issue and you will either get assigned to the issue, have it closed or a comment will be dropped for you.
 
 You have been assigned an issue 🥂 and are confused 😵 about where to go from here, follow this guide below to make your changes and pull request 🍾.
@@ -125,7 +124,7 @@ Hurray!!, we are done with the hard part. Head to github to make the pull reques
 
 The maintainer of amazon-clone looks at Pull Requests on a regular basis and carries out merging or comments on the requests. You can close a pull request if it isn't showing any activity after two weeks.
 
-## Commit messages 
+## Commit messages
 
 Amazon-clone has certain conventions that should be adopted when contributing.
 
@@ -137,3 +136,9 @@ Amazon-clone has certain conventions that should be adopted when contributing.
 - Commit changes to `package.json`, `.gitignore` and other meta files with `chore(filenamewithoutext): ...`
 - Commit changes to README files or comments with `docs: ...`
 - Cody style changes with `style: standard`
+## Thanks to all Contributors
+
+<a href="https://github.com/Kanika637/amazon-clone/graphs/contributors"> 
+<img src="https://contrib.rocks/image?repo=Kanika637/amazon-clone" /> 
+</a>
+
