@@ -70,7 +70,7 @@ function Navbar() {
         <a class="navbar-brand white-text mr-auto" href="#" style={{fontSize:"10px",  fontWeight:"bold"}}>
         coupons
         </a>
-    
+    </div>
       
       
     
