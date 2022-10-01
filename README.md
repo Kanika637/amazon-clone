@@ -142,3 +142,8 @@ Amazon-clone has certain conventions that should be adopted when contributing.
 <img src="https://contrib.rocks/image?repo=Kanika637/amazon-clone" /> 
 </a>
 
+
+
+
+## Don't forgot to give a ⭐ to the repo, if you learned something!
+
