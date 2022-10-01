@@ -57,7 +57,7 @@ function Navbar() {
         Baby
         </a>
         <a class="navbar-brand white-text mr-auto" href="#" style={{fontSize:"10px",  fontWeight:"bold"}}>
-        Toys& Games 
+        Toys & Games  
         </a>
         <a class="navbar-brand white-text mr-auto" href="#" style={{fontSize:"10px",  fontWeight:"bold"}}>
         Home Improvement
