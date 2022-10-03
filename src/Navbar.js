@@ -1,6 +1,8 @@
 import React from "react";
 import "./Navbar.css";
 
+import ArrowDropDownIcon from '@mui/icons-material/ArrowDropDown';
+
 function Navbar() {
 
 
@@ -10,8 +12,10 @@ function Navbar() {
     <div>
       <nav
         class="navbar navbar-black "
-        style={{ backgroundColor: "#353232", color: "white" }}
+        style={{ backgroundColor: "#222f3e", color: "white" }}
       >
+         <div className="navbar__complete">
+         {/* <div className="nav__left"> */}
         <button
           class="navbar-toggler toggler-example"
           type="button"
@@ -26,25 +30,65 @@ function Navbar() {
             <i class="fas fa-bars fa-1x"></i>
           </span>
         </button>
-        <a class="navbar-brand white-text mr-auto" href="#" style={{fontSize:"13px", fontWeight:"bold"}}>
-          All
+       
+     
+       <a class="navbar-brand white-text " href="#" style={{fontSize:"15px", fontWeight:"bold", marginLeft:"-5px"}}>
+       All
         </a>
-        <a class="navbar-brand white-text mr-auto" href="#" style={{fontSize:"13px", marginLeft:"-740px"}}>
-          Today's Deal
+        <a class="navbar-brand white-text mr-auto" href="#" style={{fontSize:"10px",  fontWeight:"bold"}}>
+       Fresh
         </a>
-        <a class="navbar-brand white-text mr-auto" href="#" style={{fontSize:"13px",  marginLeft:"-760px"}}>
-          Buy Again
+        <a class="navbar-brand white-text mr-auto" href="#" style={{fontSize:"10px",  fontWeight:"bold"}}>
+          Amazon Pay
         </a>
+
        <a class="navbar-brand white-text mr-auto" href="/customer" style={{fontSize:"13px",  marginLeft:"-760px"}}>
           Customer services
         </a>
       
         <a class="navbar-brand white-text mr-auto" href="#" style={{fontSize:"13px",  marginLeft:"-760px"}}>
           Gift Cards
+
+        <a class="navbar-brand white-text mr-auto" href="#" style={{fontSize:"10px",  fontWeight:"bold" }}>
+         Gift cards
         </a>
-        <a class="navbar-brand white-text mr-auto" href="#" style={{fontSize:"13px",  marginLeft:"-750px"}}>
-          Sell
+        <a class="navbar-brand white-text mr-auto" href="#" style={{fontSize:"10px",  fontWeight:"bold"}}>
+        Today's Deals
+
         </a>
+        <a class="navbar-brand white-text mr-auto" href="#" style={{fontSize:"10px",  fontWeight:"bold"}}>
+        Sell
+        </a>
+        <a class="navbar-brand white-text mr-auto" href="#" style={{fontSize:"10px",  fontWeight:"bold"}}>
+        Gift Ideas
+        </a>
+        <a class="navbar-brand white-text mr-auto" href="#" style={{fontSize:"10px",  fontWeight:"bold"}}>
+        Buy Again
+        </a>
+        <a class="navbar-brand white-text mr-auto" href="#" style={{fontSize:"10px",  fontWeight:"bold"}}>
+        Health, Household & Personal care
+        </a>
+        <a class="navbar-brand white-text mr-auto" href="#" style={{fontSize:"10px",  fontWeight:"bold"}}>
+        Baby
+        </a>
+        <a class="navbar-brand white-text mr-auto" href="#" style={{fontSize:"10px",  fontWeight:"bold"}}>
+        Toys & Games  
+        </a>
+        <a class="navbar-brand white-text mr-auto" href="#" style={{fontSize:"10px",  fontWeight:"bold"}}>
+        Home Improvement
+        </a>
+        <a class="navbar-brand white-text mr-auto" href="#" style={{fontSize:"10px",  fontWeight:"bold"}}>
+        Browsing History
+        <ArrowDropDownIcon/>
+        
+        </a>
+        <a class="navbar-brand white-text mr-auto" href="#" style={{fontSize:"10px",  fontWeight:"bold"}}>
+        coupons
+        </a>
+    </div>
+      
+      
+    
 
         <div class="collapse navbar-collapse" id="navbarSupportedContent1">
           <ul class="navbar-nav mr-auto">
