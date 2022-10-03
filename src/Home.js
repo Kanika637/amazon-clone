@@ -1,12 +1,16 @@
 import React from 'react'
 import "./Home.css";
 import Product  from './Product';
+import CarouselBlock from './Carousel';
+import Slider from './Carousel';
+
 function Home() {
     return (
         <div className="home">
             <div className="home__container">
-                 <img className="home__image" 
-                 src="https://m.media-amazon.com/images/I/61DUO0NqyyL._SX3000_.jpg" alt="Home"/>
+            <Slider />
+                 {/* <img className="home__image"  */}
+                 {/* src="https://m.media-amazon.com/images/I/61DUO0NqyyL._SX3000_.jpg" alt="Home"/> */}
                  <div className="home__row">
                      <Product title="2021 Apple 10.2-inch iPad (Wi-Fi, 64GB)- Space Gray"
                      price={95000}
@@ -136,5 +140,4 @@ function Home() {
 }
 
 export default Home
-
 
