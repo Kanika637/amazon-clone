@@ -19,3 +19,13 @@
   padding: 10px;
   border-bottom: 1px solid lightgray;
 }
+
+.checkout__right{
+  position: fixed;
+  right: 0;
+  margin-right: 10px;
+}
+
+.subtotal-calculate {
+  margin-left: 47rem;
+}
