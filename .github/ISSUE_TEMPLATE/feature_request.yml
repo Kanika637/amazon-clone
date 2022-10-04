@@ -1,6 +1,6 @@
 name: 💡 Feature request
 description: Have a new idea/feature ? Please suggest!
-labels: ["Priority: Low, Status: Available, Type: Enhancement"]
+labels: ["enhancement"]
 body:
   - type: textarea
     id: description
@@ -24,7 +24,7 @@ body:
       label: Describe alternatives you've considered
       description: A clear and concise description of any alternative solutions or features you've considered.
     validations:
-      required: true
+      required: false
 
   - type: textarea
     id: extrainfo
@@ -33,4 +33,3 @@ body:
       description: Add any other context or screenshots about the feature request here.
     validations:
       required: false
-
