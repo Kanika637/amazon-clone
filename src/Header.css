@@ -60,7 +60,7 @@
 .header__option {
   display: flex;
   flex-direction: column;
-  margin-left: 50px;
+  margin-left: 10px;
   margin-right: 10px;
   color: white;
 }
@@ -72,6 +72,7 @@
   color: white;
   display: flex;
   align-items: center;
+  margin-top: 7px;
 }
 .header__basketCount {
   margin-left: 10px;
@@ -80,9 +81,9 @@
 
 .header__searchForm {
   display: flex;
-  width: 800px;
+  width: 500px;
   height: 40px;
-  margin-left: 80px;
+  margin-left: 50px;
 }
  
 
