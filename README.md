@@ -4,7 +4,18 @@ Hurray!, you're here!✨. This is the first step in making your contribution to 
 
 Finally, we can't wait to see your outstanding issues and pull requests. Welcome 😇❤
 
-# Ground Rules
+ # 📝 Table of Contents
+- [Ground Rules](#rules)
+- [PR guidelines ](#pr)
+- [First Contribution](#first_contribution)
+- [How to open Issue](#issue)
+- [Gettin started](#get_started)
+- [Raise PR](#raise_pr)
+- [Review](#review)
+- [Commit changes](#commit_changes)
+- [Contributors](#contributors)
+
+# Ground Rules <a name = "rules"></a>
 
 Here at amazon clone, we welcome everyone to contribute to our project. You can contribute in several ways not just in code (E.g. Technical writing).
 
@@ -14,12 +25,12 @@ Having numerous means of contributing means working with alot of individuals whi
 - Respect 👨🏾‍🤝‍👨🏽. Having respect for everyone, their skills and opinions is paramount.
 - Welcoming tone 😇💃: It is expected that you interact with others in an optimistic and cheerful manner.
 
-# Things to take care while making a PR:
+# Things to take care while making a PR: <a name = "pr"></a>
 
 - Don't forget to attach a screenshot of the final output of the work that you have done, and do mention the issue you have worked upon, while making a PR.
 - Just make sure that you push only the files that you have worked upon.
 
-# Your First Contribution
+# Your First Contribution  <a name = "first_contribution"></a>
 
 Is this your first time contributing to an open source project? If yes, Welcome!!✨🎉💃🏾 Here is a [great tutorial](https://app.egghead.io/playlists/how-to-contribute-to-an-open-source-project-on-github) on how to contribute to an open source project.
 
@@ -27,7 +38,7 @@ At this point you are ready to take on the world of open source contribution!!.
 
 You must have seen a bug or problem you can fix, this is when you open a new issue for that problem. Let's do it together.
 
-## Steps to open a new issue
+## Steps to open a new issue <a name = "issue"></a>
 
 - **Step 1:** Navigate to the issues navigation button. See below 👇
 
@@ -53,7 +64,7 @@ Hurray, you just made added your first issue. The managers of amazon clone will 
 
 You have been assigned an issue 🥂 and are confused 😵 about where to go from here, follow this guide below to make your changes and pull request 🍾.
 
-## Getting Started
+## Getting Started <a name = "get_started"></a>
 
 Fork the amazon clone repository. See below 👇
 
@@ -100,7 +111,7 @@ git checkout -b "#343-make a request"
 
 You are all set!! 🍾🎉. You can now make your changes locally. Once you are done making all your changes, you can now push code and make a pull request.
 
-## Steps to making a pull request
+## Steps to making a pull request  <a name = "raise_pr"></a>
 
 You have to switch to the main branch and make sure it's up to date with the amazon's clone main branch. To do so, use the following commands below.
 
@@ -120,11 +131,11 @@ git push origin <name-of-your-branch>
 
 Hurray!!, we are done with the hard part. Head to github to make the pull request Github will check for conflicts and if non is found, you can make the pull request and the mainteners of amazon clone will review your pull request to have it merged or make a comment on it.
 
-# Code review process
+# Code review process <a name = "review"></a>
 
 The maintainer of amazon-clone looks at Pull Requests on a regular basis and carries out merging or comments on the requests. You can close a pull request if it isn't showing any activity after two weeks.
 
-## Commit messages
+## Commit messages <a name = "commit_changes"></a>
 
 Amazon-clone has certain conventions that should be adopted when contributing.
 
@@ -136,7 +147,7 @@ Amazon-clone has certain conventions that should be adopted when contributing.
 - Commit changes to `package.json`, `.gitignore` and other meta files with `chore(filenamewithoutext): ...`
 - Commit changes to README files or comments with `docs: ...`
 - Cody style changes with `style: standard`
-## Thanks to all Contributors
+## Thanks to all Contributors <a name = "contributors"></a>
 
 <a href="https://github.com/Kanika637/amazon-clone/graphs/contributors"> 
 <img src="https://contrib.rocks/image?repo=Kanika637/amazon-clone" /> 
