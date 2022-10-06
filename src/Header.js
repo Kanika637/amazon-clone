@@ -1,6 +1,7 @@
 import React from 'react'
 import './Header.css' 
- 
+import { Badge } from "@material-ui/core";
+import {  ShoppingCartOutlined } from "@material-ui/icons";
 import {Link} from "react-router-dom";
 import {useStateValue} from "./StateProvider";
 import {auth} from "./firebase";
@@ -66,8 +67,10 @@ function Header() {
                 <Link to="/checkout">
                 <div className="header__optionBasket">
                   
-                    <AddShoppingCartIcon fontSize='large'/>
-                    <span classNAme="header__optionLineTwo header__basketCount">{basket?.length}</span>
+                <Badge badgeContent={basket?.length} color="primary">
+                  <ShoppingCartOutlined  fontSize='large'/>
+                </Badge>
+                    <span classNAme="header__optionLineTwo header__basketCount">Cart</span>
                 </div>
                 </Link>
             </div>
