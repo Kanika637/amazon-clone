@@ -20,8 +20,8 @@ function AllCategories() {
             <Card.Body>
               <Card.Title>Books & Toys</Card.Title>
               <Card.Text>
-                Upto 70% off
-                Books, Toys, Gromming, and More.
+                Upto 70% off on
+                Books, Toys, Grooming and More.
               </Card.Text>
               <Link to="/books-toys">
 
@@ -38,8 +38,8 @@ function AllCategories() {
             <Card.Body>
               <Card.Title>Fashion & Beauty</Card.Title>
               <Card.Text>
-                50-80-%  off
-                Fashion and Beauty.Mens and Womens Wear
+                50-80-% off on
+                Fashion and Beauty Products
               </Card.Text>
               <Link to="/fashion-beauty">
 
@@ -56,8 +56,8 @@ function AllCategories() {
             <Card.Body>
               <Card.Title>Electronics</Card.Title>
               <Card.Text>
-                Upto 75% off
-                Electronics and Accesories.
+                Upto 75% off on
+                Electronics and Accessories.
               </Card.Text>
               <Link to="/electronics">
 
