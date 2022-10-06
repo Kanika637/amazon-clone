@@ -5,7 +5,7 @@ import Product from '../../Product'
 function FashionBeauty() {
   return (
     <>
-      <h1 className='fashion-beauty-category-heading'>Fahion & Beauty</h1>
+      <h1 className='fashion-beauty-category-heading'>Fashion & Beauty</h1>
       <div className="home__row">
         <Product title="Men's Cotton Blend Full Sleeve Shirt | Stylish Printed Casual Wear Shirt for"
           price={359}
