@@ -25,7 +25,7 @@ function BookToys(id, title, price, image, rating, reviews) {
   };
   return (
     <>
-      <h1 className='toys-books-heading'>Toys & Books</h1>
+      <h1 className='toys-books-heading'>Books & Toys</h1>
       <div className="home__row">
         <Product title="Storio Kids Toys LCD Writing Tablet 8.5Inch E-Note Pad Best Birthday Gift for Girls Boys"
           price={225}
