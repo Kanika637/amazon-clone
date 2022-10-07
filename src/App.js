@@ -1,26 +1,29 @@
-import "./App.css";
-import React, { useEffect } from "react";
-import Header from "./Header";
-import Home from "./Home";
-import { BrowserRouter as Router, Switch, Route } from "react-router-dom";
+import './App.css';
+import React, { useEffect } from 'react';
+import Header from './Header';
+import Home from './Home';
+import { BrowserRouter as Router, Switch, Route }
+  from "react-router-dom";
 
-import Checkout from "./Checkout";
+import Checkout from './Checkout'
 import Login from "./Login";
 import { auth } from "./firebase";
-import { useStateValue } from "./StateProvider";
+import { useStateValue } from './StateProvider'
 import Payment from "./Payment";
-import { Elements } from "@stripe/react-stripe-js";
-import { loadStripe } from "@stripe/stripe-js";
-import Thanku from "./Thanku";
-import Navbar from "./Navbar";
+import { Elements } from '@stripe/react-stripe-js';
+import { loadStripe } from '@stripe/stripe-js';
+import Thanku from './Thanku';
+import Navbar from './Navbar';
 
-import Footer from "./Footer";
+import Footer from './Footer';
+import BookToys from './Categories/BooksToys/BookToys';
+import AllCategories from './Categories/AllCategories';
+import FashionBeauty from './Categories/FashionBeauty/FashionBeauty';
+import Electronics from './Categories/Electronics/Electronics';
 
-const stripePromise = loadStripe(
-  "pk_test_51JdCsbSDjgMnau9ncKpDOaddNIWtdhVTTV92V4ShkTzLec033vWcRQjqEUByb1s4D6vmPmH6oMK0bkBJyBlRsStp00wQV1pNuX"
-);
+const stripePromise = loadStripe('pk_test_51JdCsbSDjgMnau9ncKpDOaddNIWtdhVTTV92V4ShkTzLec033vWcRQjqEUByb1s4D6vmPmH6oMK0bkBJyBlRsStp00wQV1pNuX');
 function App() {
-  const [{}, dispatch] = useStateValue();
+  const [{ }, dispatch] = useStateValue();
   //to keep a check who is signed in/making a listner
 
   useEffect(() => {
@@ -70,10 +73,28 @@ function App() {
               <Header />
               <Checkout />
             </Route>
+            <Route path="/books-toys">
+              <Header />
+              <Navbar />
+              <BookToys />
+            </Route>
+
+            <Route path="/fashion-beauty">
+              <Header />
+              <Navbar />
+              <FashionBeauty />
+            </Route>
+
+            <Route path="/electronics">
+              <Header />
+              <Navbar />
+              <Electronics />
+            </Route>
             <Route path="/">
               <Header />
               <Navbar />
               <Home />
+              <AllCategories />
             </Route>
           </Switch>
           <Footer />
