@@ -4,19 +4,21 @@
 }
 
 .header {
-  position: sticky;
-  top: 0px;
-  z-index: 10;
-  height: 80px;
   display: flex;
   flex-flow: row nowrap;
   align-items: center;
   justify-content: space-between;
+  position: sticky;
+  top: 0px;
+  z-index: 10;
+  height: 80px;
   background: #131921;
+  height: 60px;
 }
 
 .header__logo {
-  width: 10vw;
+  width: 100px;
+  height: 50px;
   margin: 0px 10px 0px 10px;
   object-fit: contain;
   padding-top: 11px;
@@ -27,6 +29,7 @@
   align-items: center;
   border-radius: 24px;
   width: 65%;
+  height: 40px;
 }
 
 .header__searchForm {
@@ -39,7 +42,7 @@
   width: 100%;
   height: 40px;
   border: none;
-  font-size: clamp(12px, 2vw, 15px);
+  font-size: clamp(12px, 2vw, 1px);
 }
 
 .header__searchInput:focus {
@@ -59,7 +62,6 @@
   justify-content: space-evenly;
   align-items: center;
   padding: 10px;
-  /* flex: 1; */
 }
 
 .header__right{
@@ -72,7 +74,6 @@
   display: flex;
   flex-direction: column;
   flex-wrap: wrap;
-  font-size: clamp(12px, 2vw, 15px);
   width: 10vw;
   color: white;
 }
@@ -81,23 +82,34 @@
   text-decoration: none;
 }
 
+.header__optionLineOne{
+  font-size: 12px;
+}
+
 .header__optionLineTwo {
-  font-weight: 600;
+  font-weight: 700;
+  font-size: clamp(12px, 2vw, 18px);
 }
 
 .header__optionBasket {
+  position: relative;
   color: white;
   display: flex;
   align-items: center;
+  width: 38px;
+  height: 26px;
 }
 
-/* .header__basketCount {
-  margin-left: 10px;
-  margin-right: 10px;
-} */
+.header__basketCount {
+  position: absolute;
+  z-index: 1;
+  right: 10px;
+  top: -0.5vw;
+  font-weight: bold;
+  color:#f08804;
+}
 
 .header__selectInput{
- 
   display: flex;
   background-color:#f1f3f5;
   border-radius: 5px 0 0 5px;
@@ -118,12 +130,41 @@ font-size: 14px;
   color: #495057;
 }
 
-@media (max-width: 775px) {
-  .header__option{
-    font-size: 12px;
+@media (max-width: 500px){
+  .header{
+    flex-flow: row wrap;
+    justify-content: space-between;
+    height: auto;
   }
 
-  .header__searchInput{
-    font-size: 12px;
+  .header__search{
+    flex: 2 0 100%;
+    order: 3;
   }
+
+  .header__nav{
+    flex: 1 1 50%;
+    justify-content: end;
+    order: 2;
+  }
+
+  .header__right{
+    width: auto;
+  }
+
+  .header__option{
+    display: flex;
+    flex-flow: row wrap;
+    justify-content: space-between;
+    align-items: center;
+    width: auto;
+    gap:10px;
+    margin-right: 10px;
+  }
+
+  .header__optionUser{
+    width: 5vw;
+    min-width: 19px;
+  }
+
 }
