@@ -21,9 +21,6 @@ import AllCategories from './Categories/AllCategories';
 import FashionBeauty from './Categories/FashionBeauty/FashionBeauty';
 import Electronics from './Categories/Electronics/Electronics';
 
-
-
-
 const stripePromise = loadStripe('pk_test_51JdCsbSDjgMnau9ncKpDOaddNIWtdhVTTV92V4ShkTzLec033vWcRQjqEUByb1s4D6vmPmH6oMK0bkBJyBlRsStp00wQV1pNuX');
 function App() {
   const [{ }, dispatch] = useStateValue();
@@ -31,41 +28,34 @@ function App() {
 
   useEffect(() => {
     //will run only once when the app component loads
-    auth.onAuthStateChanged(authUser => {
-      console.log('USER IS >>>>', authUser);
+    auth.onAuthStateChanged((authUser) => {
       if (authUser) {
         //the user logged in/the user was logged in
-        {/*when someone will logg in it will shoot
+        {
+          /*when someone will logg in it will shoot
           the user ibto the data layer and vice versa if we 
-          logged out*/}
+          logged out*/
+        }
         dispatch({
-
-          type: 'SET_USER',
-          user: authUser
-        })
-      }
-      else {
+          type: "SET_USER",
+          user: authUser,
+        });
+      } else {
         //the user is logged out
         dispatch({
-          type: 'SET_USER',
-          user: null
-        })
+          type: "SET_USER",
+          user: null,
+        });
       }
-    })
-
-
-  }, [])
+    });
+  }, []);
   return (
     <>
-
       <Router>
         <div className="App">
-
           <Switch>
-
             <Route path="/thanku">
               <Header />
-
               <Thanku />
             </Route>
             <Route path="/Payment">
@@ -75,7 +65,6 @@ function App() {
               <Elements stripe={stripePromise}>
                 <Payment />
               </Elements>
-
             </Route>
             <Route path="/login">
               <Login />
@@ -84,7 +73,6 @@ function App() {
               <Header />
               <Checkout />
             </Route>
-
             <Route path="/books-toys">
               <Header />
               <Navbar />
@@ -102,15 +90,12 @@ function App() {
               <Navbar />
               <Electronics />
             </Route>
-            
             <Route path="/">
               <Header />
               <Navbar />
               <Home />
               <AllCategories />
-
             </Route>
-
           </Switch>
           <Footer />
         </div>
