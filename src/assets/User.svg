@@ -1,0 +1,21 @@
+<svg
+            viewBox="0 0 68 80"
+            fill="none"
+            xmlns="http://www.w3.org/2000/svg"
+            className="header__optionUser"
+          >
+            <path
+              d="M66 78V65.6667C66 59.1247 64.3143 52.8506 61.3137 48.2247C58.3131 43.5988 54.2435 41 50 41H18C13.7565 41 9.68687 43.5988 6.68629 48.2247C3.68571 52.8506 2 59.1247 2 65.6667V78"
+              stroke="white"
+              stroke-width="6"
+              stroke-linecap="round"
+              stroke-linejoin="round"
+            />
+            <path
+              d="M34 35.8333C42.8366 35.8333 50 28.3714 50 19.1667C50 9.96192 42.8366 2.5 34 2.5C25.1634 2.5 18 9.96192 18 19.1667C18 28.3714 25.1634 35.8333 34 35.8333Z"
+              stroke="white"
+              stroke-width="6"
+              stroke-linecap="round"
+              stroke-linejoin="round"
+            />
+          </svg>
