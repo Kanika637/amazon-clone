@@ -14,5 +14,5 @@ jobs:
           node-version: 16
       - run: yarn
       - run: echo -e "Building Amazon Clone\n"
-      # - run: cp .env.local .env.production         you can uncommit this line of when you have local and production .env files 
+      # - run: cp .env.local .env.production         you can uncomment this line of when you have local and production .env files 
       - run: yarn run build
