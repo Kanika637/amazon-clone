@@ -1,58 +1,58 @@
 import React from 'react'
 import "./footer.css"
-import {useState} from 'react';
+import { useState } from 'react';
 import Divider from '@material-ui/core/Divider';
 function Footer() {
 
 
-//back to top-->
-const [visible, setVisible] = useState(false)
+  //back to top-->
+  const [visible, setVisible] = useState(false)
   const toggleVisible = () => {
     const scrolled = document.documentElement.scrollTop;
-    if (scrolled > 300){
+    if (scrolled > 300) {
       setVisible(true)
-    } 
-    else if (scrolled <= 300){
+    }
+    else if (scrolled <= 300) {
       setVisible(false)
     }
   };
-  const scrollToTop = () =>{
+  const scrollToTop = () => {
     window.scrollTo({
-      top: 0, 
+      top: 0,
       behavior: 'smooth'
     });
   };
   window.addEventListener('scroll', toggleVisible);
 
-    return (
-      <footer className="footer">
-        <div className="top" onClick={scrollToTop}>
-              Back to top
+  return (
+    <footer className="footer">
+      <div className="top" onClick={scrollToTop}>
+        Back to top
+      </div>
+      <div className="rest-footer-1">
+        <div className="sec">
+          <h5 className="foot-head">Get to Know Us</h5>
+          <ul className="foot-content">
+            <li className="leading-5">
+              <a href="#">About us</a>
+            </li>
+            <li className="leading-5">
+              <a href="#">Careers</a>
+            </li>
+            <li className="leading-5">
+              <a href="#">Press Releases</a>
+            </li>
+            <li className="leading-5">
+              <a href="#">Amazon Cares</a>
+            </li>
+            <li className="leading-5">
+              <a href="#">Gift a Smile</a>
+            </li>
+            <li className="leading-5">
+              <a href="#">Amazon Science</a>
+            </li>
+          </ul>
         </div>
-        <div className="rest-footer-1">
-            <div className="sec">
-            <h5 className="foot-head">Get to Know Us</h5>
-            <ul className="foot-content">
-                <li className="leading-5">
-                <a href="#">About us</a>
-                </li>
-                <li className="leading-5">
-                <a href="#">Careers</a>
-                </li>
-                <li className="leading-5">
-                <a href="#">Press Releases</a>
-                </li>
-                <li className="leading-5">
-                <a href="#">Amazon Cares</a>
-                </li>
-                <li className="leading-5">
-                <a href="#">Gift a Smile</a>
-                </li>
-                <li className="leading-5">
-                <a href="#">Amazon Science</a>
-                </li>
-            </ul>
-            </div>
         <div className="sec">
           <h5 className="foot-head">
             Contact Us
@@ -124,35 +124,36 @@ const [visible, setVisible] = useState(false)
       </div>
       <div className='footer-line'>
       </div>
-        <div className="rest-footer-2">
-            <img src="public\amazon-logo.png" alt="logo"></img>
+      <div className="rest-footer-2">
+        <img src={process.env.PUBLIC_URL + '/amazon-logo.png'} alt="logo"></img>
+      </div>
+      <div className="base">
+        <div className='upper-base'>
+          <div>
+            <a href="#" className="font-bold mr-2">
+              Conditions of Use
+            </a>
+          </div>
+          <div>
+            <a href="#" className="font-bold mr-2">
+              Privacy Notice
+            </a>
+          </div>
+          <div>
+            <a href="#" className="font-bold mr-2">
+              Interest-Based Ads
+            </a>
+          </div>
         </div>
-        <div className="base">
-            <div className='upper-base'>
-            <div>
-                <a href="#" className="font-bold mr-2">
-                Conditions of Use
-                </a>
-            </div>
-            <div>
-                <a href="#" className="font-bold mr-2">
-                Privacy Notice
-                </a>
-            </div>
-            <div>
-                <a href="#" className="font-bold mr-2">
-                Interest-Based Ads
-                </a>
-            </div>
-            </div>
-            <div className='lower-base'>
-            <span className="text-gray-400">
+        <div className='lower-base'>
+          <span className="text-gray-400">
             &copy; 1996-2021, Amazon.com, Inc. or its affiliates
-            </span>
+          </span>
         </div>
 
-      </div>  
+      </div>
     </footer>
 
-      )}
+  )
+}
 export default Footer

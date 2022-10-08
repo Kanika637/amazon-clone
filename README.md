@@ -66,6 +66,12 @@ You have been assigned an issue 🥂 and are confused 😵 about where to go fro
 
 ## Getting Started <a name = "get_started"></a>
 
+_Skip all of the steps below by using Gitpod, which would automatically do all of that for you_ 
+
+[![Open in Gitpod](https://gitpod.io/button/open-in-gitpod.svg)](https://gitpod.io/#https://github.com/Kanika637/amazon-clone)
+
+or
+
 Fork the amazon clone repository. See below 👇
 
 ![fork](https://user-images.githubusercontent.com/63567230/186289165-c97fd6bf-6f88-4e15-b7ab-26fbf612e21b.JPG)
