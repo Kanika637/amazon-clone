@@ -1,0 +1,18 @@
+name: Amazon Clone Build
+
+on:
+  push:
+    branches: [main] 
+
+jobs:
+  test-build:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v2
+      - uses: actions/setup-node@v1
+        with:
+          node-version: 16
+      - run: yarn
+      - run: echo -e "Building Amazon Clone\n"
+      - run: cp .env.local .env.production
+      - run: yarn run build
