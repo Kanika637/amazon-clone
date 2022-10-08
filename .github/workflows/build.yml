@@ -9,10 +9,10 @@ jobs:
     runs-on: ubuntu-latest
     steps:
       - uses: actions/checkout@v2
-      - uses: actions/setup-node@v1
+      - uses: actions/setup-node@v3
         with:
           node-version: 16
       - run: yarn
       - run: echo -e "Building Amazon Clone\n"
       # - run: cp .env.local .env.production         you can uncomment this line of when you have local and production .env files 
-      - run: yarn run build
+      - run: yarn build
