@@ -1,4 +1,4 @@
-.top{
+.top {
     padding-top: 1%;
     padding-left: 46%;
     padding-bottom: 1%;
@@ -6,44 +6,54 @@
     color: white;
     cursor: pointer;
 }
-.rest-footer-1{
+
+.rest-footer-1 {
     background-color: #222f3f;
     display: flex;
     flex-direction: row;
     justify-content: space-evenly;
     padding: 2% 10%;
 }
-.foot-head{
+
+.foot-head {
     color: white;
     font-size: 16px;
-    font-weight: 500;  
+    font-weight: 500;
 }
-.leading-5{
+
+.leading-5 {
     list-style: none;
-    
+
 }
-ul{
+
+ul {
     padding-left: 0%;
 }
-a{
+
+a {
     color: white;
 }
-.rest-footer-2{
+
+.rest-footer-2 {
     background-color: #222f3f;
     padding: 3% 10%;
     text-align: center;
 }
 
-.footer-line{
+.rest-footer-2 img {
+    width: 7rem;
+}
+
+.footer-line {
     background-color: #222f3f;
     border-top: 1px solid #3a4553;
 }
 
-.base{
+.base {
     background-color: #131a22;
 }
 
-.upper-base{
+.upper-base {
     display: flex;
     flex-direction: row;
     justify-content: space-evenly;
@@ -52,7 +62,8 @@ a{
     padding-top: 1%;
     font-size: 12px;
 }
-.lower-base{
+
+.lower-base {
     font-size: 12px;
     text-align: center;
     color: white;
