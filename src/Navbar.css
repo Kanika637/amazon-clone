@@ -30,7 +30,7 @@ main_nav {
     display: flex;
     align-items: center;
    
-    margin-left: 23px;
+    /* margin-left: 23px; */
 
   }
   .navbar__right{
@@ -39,4 +39,39 @@ main_nav {
  
   }
 
+  .navbar__complete .hamburger__menu{
+    border:1px solid transparent
+  }
+
+  .navbar__complete .hamburger__menu:hover {
+    border:1px solid white
+  }
+
+  .navbar__complete .hamburger__menu__icon {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+ 
+
+  .navbar__complete .hamburger__menu__icon > span {
+    font-size: 15px;
+    font-weight: bold;
+    margin-left: 5px;
+  }
+  .navbar__complete .nav__item {
+    font-size: 13px;
+    font-weight: bold;
+    padding: 4px 10px;
+    border: 1px solid transparent;
+    margin-right: 4px !important;
+    border-radius: 3px;
+    letter-spacing: 0.1px;
+  }
+  .navbar__complete .nav__item.hamburger__item {
+    margin-left: 0px;
+  }
+  .navbar__complete .nav__item:hover {
+    border: 1px solid white;
+  }
 
