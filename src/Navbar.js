@@ -1,6 +1,24 @@
 import React from "react";
 import "./Navbar.css";
-import ArrowDropDownIcon from '@mui/icons-material/ArrowDropDown';
+import ArrowDropDownIcon from "@mui/icons-material/ArrowDropDown";
+
+// All nav items list array
+const navItemList = [
+  { id: 0, title: "Fresh", hrefLink: "#" },
+  { id: 1, title: "Amazon Pay", hrefLink: "#" },
+  { id: 2, title: "Gift Cards", hrefLink: "#" },
+  { id: 3, title: "Today's Deals", hrefLink: "#" },
+  { id: 4, title: "Sell", hrefLink: "#" },
+  { id: 5, title: "Gift Ideas", hrefLink: "#" },
+  { id: 6, title: "Buy Again", hrefLink: "#" },
+  { id: 7, title: "Health, Household & Personal Care", hrefLink: "#" },
+  { id: 8, title: "Baby", hrefLink: "#" },
+  { id: 9, title: "Toys & Games", hrefLink: "#" },
+  { id: 10, title: "Home Improvement", hrefLink: "#" },
+  { id: 11, title: "Browsing History", hrefLink: "#" },
+  { id: 12, title: "Coupns", hrefLink: "#" },
+];
+
 function Navbar() {
   return (
     <div>
@@ -8,72 +26,34 @@ function Navbar() {
         class="navbar navbar-black "
         style={{ backgroundColor: "#222f3e", color: "white" }}
       >
-         <div className="navbar__complete">
-         {/* <div className="nav__left"> */}
-        <button
-          class="navbar-toggler toggler-example"
-          type="button"
-          data-toggle="collapse"
-          data-target="#navbarSupportedContent1"
-          aria-controls="navbarSupportedContent1"
-          aria-expanded="false"
-          aria-label="Toggle navigation"
-          style={{ color: "white" }}
-        >
-          <span class="dark-blue-text">
-            <i class="fas fa-bars fa-1x"></i>
-          </span>
-        </button>
-       
-     
-       <a class="navbar-brand white-text " href="#" style={{fontSize:"15px", fontWeight:"bold", marginLeft:"-5px"}}>
-       All
-        </a>
-        <a class="navbar-brand white-text mr-auto" href="#" style={{fontSize:"10px",  fontWeight:"bold"}}>
-       Fresh
-        </a>
-        <a class="navbar-brand white-text mr-auto" href="#" style={{fontSize:"10px",  fontWeight:"bold"}}>
-          Amazon Pay
-        </a>
-        <a class="navbar-brand white-text mr-auto" href="#" style={{fontSize:"10px",  fontWeight:"bold" }}>
-         Gift cards
-        </a>
-        <a class="navbar-brand white-text mr-auto" href="#" style={{fontSize:"10px",  fontWeight:"bold"}}>
-        Today's Deals
-        </a>
-        <a class="navbar-brand white-text mr-auto" href="#" style={{fontSize:"10px",  fontWeight:"bold"}}>
-        Sell
-        </a>
-        <a class="navbar-brand white-text mr-auto" href="#" style={{fontSize:"10px",  fontWeight:"bold"}}>
-        Gift Ideas
-        </a>
-        <a class="navbar-brand white-text mr-auto" href="#" style={{fontSize:"10px",  fontWeight:"bold"}}>
-        Buy Again
-        </a>
-        <a class="navbar-brand white-text mr-auto" href="#" style={{fontSize:"10px",  fontWeight:"bold"}}>
-        Health, Household & Personal care
-        </a>
-        <a class="navbar-brand white-text mr-auto" href="#" style={{fontSize:"10px",  fontWeight:"bold"}}>
-        Baby
-        </a>
-        <a class="navbar-brand white-text mr-auto" href="#" style={{fontSize:"10px",  fontWeight:"bold"}}>
-        Toys & Games  
-        </a>
-        <a class="navbar-brand white-text mr-auto" href="#" style={{fontSize:"10px",  fontWeight:"bold"}}>
-        Home Improvement
-        </a>
-        <a class="navbar-brand white-text mr-auto" href="#" style={{fontSize:"10px",  fontWeight:"bold"}}>
-        Browsing History
-        <ArrowDropDownIcon/>
-        
-        </a>
-        <a class="navbar-brand white-text mr-auto" href="#" style={{fontSize:"10px",  fontWeight:"bold"}}>
-        coupons
-        </a>
-    </div>
-      
-      
-    
+        <div className="navbar__complete">
+          <button
+            class="navbar-toggler toggler-example hamburger__menu"
+            type="button"
+            data-toggle="collapse"
+            data-target="#navbarSupportedContent1"
+            aria-controls="navbarSupportedContent1"
+            aria-expanded="false"
+            aria-label="Toggle navigation"
+            style={{ color: "white" }}
+          >
+            <span class="dark-blue-text hamburger__menu__icon">
+              <i class="fas fa-bars fa-1x"></i>
+              <span>All</span>
+            </span>
+          </button>
+
+          {navItemList?.map((navItem) => (
+            <a
+              class="navbar-brand white-text nav__item"
+              key={navItem.id}
+              href={navItem.hrefLink}
+            >
+              {navItem.title}
+              {navItem.title === "Browsing History" && <ArrowDropDownIcon />}
+            </a>
+          ))}
+        </div>
 
         <div class="collapse navbar-collapse" id="navbarSupportedContent1">
           <ul class="navbar-nav mr-auto">
