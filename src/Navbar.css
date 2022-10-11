@@ -1,77 +1,55 @@
-main_nav {
-    float: left;
-  }
-  
-  main_nav a {
-    display: inline-block;
-    color: white;
-    text-align: center;
-    padding: 16px;
-    text-decoration: none;
-  }
+.navbar__img {
+  height: 40px;
+  width: 40px;
+  margin-right: 5px;
+}
+.navbar__complete {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  margin-right: 650px;
+}
 
-  .navbar__img{
-    height:40px;
-    width: 40px;
-    margin-right: 5px;
-    
-  }
-  .navbar__complete{
-    display: flex;
-   
-    align-items: center;
-    justify-content: space-between;
-    margin-right: 650px;
-  
-  }
-  
+.navbar__complete > a {
+  display: flex;
+  align-items: center;
+}
+.navbar__right {
+  display: flex;
+  align-items: center;
+}
 
-  .navbar__complete > a{
-    display: flex;
-    align-items: center;
-   
-    /* margin-left: 23px; */
+.navbar__complete .hamburger__menu {
+  border: 1px solid transparent;
+}
 
-  }
-  .navbar__right{
-    display: flex;
-   align-items: center;
- 
-  }
+.navbar__complete .hamburger__menu:hover {
+  border: 1px solid white;
+}
 
-  .navbar__complete .hamburger__menu{
-    border:1px solid transparent
-  }
+.navbar__complete .hamburger__menu__icon {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
 
-  .navbar__complete .hamburger__menu:hover {
-    border:1px solid white
-  }
-
-  .navbar__complete .hamburger__menu__icon {
-    display: flex;
-    justify-content: center;
-    align-items: center;
-  }
- 
-
-  .navbar__complete .hamburger__menu__icon > span {
-    font-size: 15px;
-    font-weight: bold;
-    margin-left: 5px;
-  }
-  .navbar__complete .nav__item {
-    font-size: 13px;
-    font-weight: bold;
-    padding: 4px 10px;
-    border: 1px solid transparent;
-    margin-right: 4px !important;
-    border-radius: 3px;
-    letter-spacing: 0.1px;
-  }
-  .navbar__complete .nav__item.hamburger__item {
-    margin-left: 0px;
-  }
-  .navbar__complete .nav__item:hover {
-    border: 1px solid white;
-  }
-
+.navbar__complete .hamburger__menu__icon > span {
+  font-size: 15px;
+  font-weight: bold;
+  margin-left: 5px;
+}
+.navbar__complete .nav__item {
+  font-size: 13px;
+  font-weight: bold;
+  padding: 4px 10px;
+  border: 1px solid transparent;
+  margin-right: 4px !important;
+  border-radius: 3px;
+  letter-spacing: 0.1px;
+}
+.navbar__complete .nav__item.hamburger__item {
+  margin-left: 0px;
+}
+.navbar__complete .nav__item:hover {
+  border: 1px solid white;
+}

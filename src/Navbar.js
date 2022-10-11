@@ -27,7 +27,6 @@ function Navbar() {
         style={{ backgroundColor: "#222f3e", color: "white" }}
       >
         <div className="navbar__complete">
-          {/* <div className="nav__left"> */}
           <button
             class="navbar-toggler toggler-example hamburger__menu"
             type="button"
