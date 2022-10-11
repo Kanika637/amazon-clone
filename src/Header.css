@@ -34,6 +34,8 @@
 }
 
 .header__locationOptionLineTwo{
+  margin-left: 10px;
+  
   font-weight: 700;
   font-size: clamp(12px, 1vw, 14px);
 }
@@ -102,7 +104,11 @@
 }
 
 .header__optionLineTwo {
+  font-size: 14px; 
+  line-height: 15px; 
   font-weight: 700;
+ 
+  
   font-size: clamp(12px, 1.5vw, 18px);
 }
 
@@ -120,11 +126,17 @@
   position: relative;
   color: white;
   display: flex;
+  margin-right: 0px;
   align-items: center;
   width: 40px;
   height: 26px;
 }
-
+.country{
+  position: absolute;
+  margin-left: -8px;
+  margin-top: 13px;
+  font-weight: 400;
+}
 .header__basketCount {
   position: absolute;
   z-index: 1;
@@ -135,6 +147,7 @@
 }
 
 .header__basketText{
+  margin-right: 10px;
   font-weight: 700;
   font-size: clamp(12px, 1vw, 16px);
 }

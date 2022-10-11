@@ -10,7 +10,7 @@ import { useStateValue } from "./StateProvider";
 import { auth } from "./firebase";
 import HeaderSearchBar from "./HeaderSearchBar";
 
-function Header() {
+function Header({country='.in'}) {
   const [{ basket, user }, dispatch] = useStateValue();
   const [screenWidth, setScreenWidth] = useState(window.innerWidth);
   {
@@ -43,12 +43,12 @@ function Header() {
     return (
       <>
         <div onClick={handleAuthentication} className="header__option">
-          <span className="header__optionLineOne">Hello, {user?.name}</span>
+          <span className="header__optionLineOne">Hello, Sign in {user?.name}</span>
           {/*this will handle the authentication
     if user is already signed in it will show 
     signout*/}
           <span className="header__optionLineTwo">
-            {user ? "Sign Out" : "Sign In"}
+            {user ? "Sign Out" : "Account & Lists"}
           </span>
         </div>
         <div className="header__option">
@@ -64,7 +64,7 @@ function Header() {
       <>
         <div onClick={handleAuthentication} className="header__option">
           <UserSvg />
-          <span>{user ? user.name : "Sign In"}</span>
+          <span>{user ? user.name : "Accounts&Lists"}</span>
         </div>
       </>
     );
@@ -79,11 +79,11 @@ function Header() {
   return (
     <div className="header">
       <Link to="/">
-        <img className="header__logo" src={logo} alt="Amazon logo" />
+        <img className="header__logo" src={logo} alt="Amazon logo" /><span className="country">{country}</span>
       </Link>
       {screenWidth > 790 ? (
         <div className="header__locationOption">
-          <span className="header__optionLineOne">Hello</span>
+          {/* <span className="header__optionLineOne">Hello</span> */}
           <span className="header__locationOptionLineTwo">
             <LocationSvg /> Select your location
           </span>
