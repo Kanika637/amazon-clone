@@ -23,7 +23,8 @@
 .checkout__right{
   position: fixed;
   right: 0;
-  margin-right: 10px;
+  margin-right: 40px;
+  margin-top: 20px;
 }
 
 .subtotal-calculate {

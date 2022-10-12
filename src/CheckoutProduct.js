@@ -32,7 +32,7 @@ function CheckoutProduct({ id, image, title, price, rating, reviews }) {
                         ))}
                     <span className='product__reviews'>({reviews})</span>
                 </div>
-                <button className="checkoutproduct__button" onClick={removeFromBasket}>Remove from basket</button>
+                <button className="product__button" onClick={removeFromBasket}>Remove from basket</button>
             </div>
         </div>
     )
