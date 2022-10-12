@@ -5,6 +5,7 @@ import CurrencyFormat from "react-currency-format";
 import { useStateValue } from './StateProvider';
 import { getBasketTotal } from "./reducer";
 import { useHistory } from "react-router-dom";
+import { ReactComponent as TickSvg } from "./assets/tick.svg";
 
 function Subtotal() {
     //provide browser history
@@ -12,11 +13,18 @@ function Subtotal() {
     const [{ basket }, dispatch] = useStateValue();
     return (
         <div className="subtotal">
+            <div className='subtotal_gift_text_container'>
+            <span className='tick__icon'>
+                <TickSvg />
+            </span>
+                <p className='subtotal_gift_text'><span className='subtotal_gift_text_green'>Part of your order qualifies for FREE Delivery.
+                </span> Select this option at checkout Details</p>
+            </div>
             {/*For rendering the money*/}
             <CurrencyFormat
                 renderText={(value) => (
                     <>
-                        <p>
+                        <p className='subtotal__text'>
                             Subtotal({basket.length} items) : <strong>{value}</strong>
                         </p>
                         <small className="subtotal__gift">
@@ -29,7 +37,7 @@ function Subtotal() {
                 thousandSeprator={true}
                 prefix={"Rs "}
             />
-            <button onClick={e => history.push("/payment")} className="proceed__button">Proceed to checkout</button>
+            <button onClick={e => history.push("/payment")} className="proceed__button">Proceed to Buy</button>
         </div>
     );
 }
