@@ -5,6 +5,7 @@ import { ReactComponent as LocationSvg } from "./assets/Location.svg";
 import { ReactComponent as CartSvg } from "./assets/Cart.svg";
 import { ReactComponent as UserSvg } from "./assets/User.svg";
 
+
 import { Link } from "react-router-dom";
 import { useStateValue } from "./StateProvider";
 import { auth } from "./firebase";
@@ -94,7 +95,9 @@ function Header({country='.in'}) {
       <div className="header__search">
         <HeaderSearchBar />
       </div>
+      
       <div className="header__nav">
+    
         {/*if there is no user then only go to login pg*/}
         <Link to={!user && "/login"} className="header__right">
           {screenWidth >= 650

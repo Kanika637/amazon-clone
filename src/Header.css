@@ -34,7 +34,7 @@
 }
 
 .header__locationOptionLineTwo{
-  margin-left: 10px;
+  margin-left: 30px;
   
   font-weight: 700;
   font-size: clamp(12px, 1vw, 14px);
