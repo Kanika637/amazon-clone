@@ -2,6 +2,8 @@ import React from 'react'
 import "./footer.css"
 import { useState } from 'react';
 import Divider from '@material-ui/core/Divider';
+import logo from "./assets/amazon-logo.png";
+
 function Footer() {
 
 
@@ -125,7 +127,7 @@ function Footer() {
       <div className='footer-line'>
       </div>
       <div className="rest-footer-2">
-        <img src={process.env.PUBLIC_URL + '/amazon-logo.png'} alt="logo"></img>
+        <img src={logo} alt="logo"></img>
       </div>
       <div className="base">
         <div className='upper-base'>
