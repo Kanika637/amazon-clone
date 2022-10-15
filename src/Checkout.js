@@ -31,8 +31,9 @@ function Checkout({ price }) {
             <h1 className="checkout__title">Your Shopping Basket</h1>
 
             {/*This will send all the products we are adding in our basket to the shopping list using the basket variable*/}
-            {basket.map((item) => (
+            {basket.map((item, index) => (
               <CheckoutProduct
+                key={index}
                 id={item.id}
                 price={item.price}
                 rating={item.rating}
