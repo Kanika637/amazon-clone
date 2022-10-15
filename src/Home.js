@@ -22,11 +22,11 @@ function Home() {
                      image="https://m.media-amazon.com/images/I/71IdKRlm8+L._AC_UL480_QL65_.jpg"
                      rating={4}
                      reviews={567}/>
-                      <Product title=""
-                 price={269}
-                 image="https://m.media-amazon.com/images/I/61dkl5iDzsL._UX679_.jpg"
+                      <Product title="JBL Flip 4 by Harman Portable Wireless Speaker with Powerful Bass & Mic (Black), Medium"
+                 price={6299}
+                 image="https://m.media-amazon.com/images/I/61bwTIJQWXL._SL1500_.jpg"
                  rating={4}
-                 reviews={269}/>
+                 reviews={133}/>
                    
                      
            
