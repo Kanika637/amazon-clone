@@ -25,8 +25,7 @@ function Home() {
                       <Product title=""
                  price={269}
                  image="https://m.media-amazon.com/images/I/61dkl5iDzsL._UX679_.jpg"
-                 rating={4}
-                 reviews={269}/>
+ reviews={133}/>
                    
                      
            
