@@ -1,9 +1,6 @@
-.home__container{
+.home__itemsContainer{
   display: grid;
-  grid-template-columns: repeat(4, 1fr);
+  grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
   grid-gap: 10px;
 }
 
-.home__slider{
-  grid-column: span 4 / auto;
-}

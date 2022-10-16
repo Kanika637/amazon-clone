@@ -202,10 +202,8 @@ const Home = () => {
 
   return (
     <div className="home">
-      <div className="home__container">
-        <Slider className="home__slider" />
-        {renderProducts(data)}
-      </div>
+      <Slider className="home__slider" />
+      <div className="home__itemsContainer">{renderProducts(data)}</div>
     </div>
   );
 };
