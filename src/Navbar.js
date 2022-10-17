@@ -1,6 +1,7 @@
-import React from "react";
+import React, { useState } from "react";
 import "./Navbar.css";
 import ArrowDropDownIcon from "@mui/icons-material/ArrowDropDown";
+import SideNav from "./SideNav";
 
 // All nav items list array
 const navItemList = [
@@ -20,6 +21,7 @@ const navItemList = [
 ];
 
 function Navbar() {
+  const [sideNavVisibility, toggleSideNavVisibility] = useState(false);
   return (
     <div>
       <nav
@@ -30,11 +32,9 @@ function Navbar() {
           <button
             class="navbar-toggler toggler-example hamburger__menu"
             type="button"
-            data-toggle="collapse"
-            data-target="#navbarSupportedContent1"
-            aria-controls="navbarSupportedContent1"
-            aria-expanded="false"
-            aria-label="Toggle navigation"
+            onClick={(_) => {
+              toggleSideNavVisibility(true);
+            }}
             style={{ color: "white" }}
           >
             <span class="dark-blue-text hamburger__menu__icon">
@@ -54,27 +54,10 @@ function Navbar() {
             </a>
           ))}
         </div>
-
-        <div class="collapse navbar-collapse" id="navbarSupportedContent1">
-          <ul class="navbar-nav mr-auto">
-            <li class="nav-item active">
-              <a class="nav-link white-text" href="#">
-                Home <span class="sr-only">(current)</span>
-              </a>
-            </li>
-            <li class="nav-item">
-              <a class="nav-link white-text" href="#">
-                Features
-              </a>
-            </li>
-            <li class="nav-item">
-              <a class="nav-link white-text" href="#">
-                Pricing
-              </a>
-            </li>
-          </ul>
-        </div>
       </nav>
+      {sideNavVisibility && (
+        <SideNav toggleVisibility={toggleSideNavVisibility} />
+      )}
     </div>
   );
 }
