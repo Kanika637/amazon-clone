@@ -2,6 +2,7 @@ import React from 'react'
 import "./footer.css"
 import { useState } from 'react';
 import Divider from '@material-ui/core/Divider';
+import footLogo from './assets/amazon-logo.png'
 function Footer() {
 
 
@@ -122,37 +123,36 @@ function Footer() {
           </ul>
         </div>
       </div>
-      <div className='footer-line'>
-      </div>
-      <div className="rest-footer-2">
-        <img src={process.env.PUBLIC_URL + '/amazon-logo.png'} alt="logo"></img>
-      </div>
-      <div className="base">
-        <div className='upper-base'>
-          <div>
-            <a href="#" className="font-bold mr-2">
-              Conditions of Use
-            </a>
-          </div>
-          <div>
-            <a href="#" className="font-bold mr-2">
-              Privacy Notice
-            </a>
-          </div>
-          <div>
-            <a href="#" className="font-bold mr-2">
-              Interest-Based Ads
-            </a>
-          </div>
+      <div class='footer-line'>
         </div>
-        <div className='lower-base'>
-          <span className="text-gray-400">
-            &copy; 1996-2021, Amazon.com, Inc. or its affiliates
-          </span>
+        <div class="logoLangContainer">
+            <ul>
+                <li class="footLogo" ><img src={footLogo} alt=""/></li>
+                <li> <span>English</span> </li>
+            </ul>
         </div>
-
-      </div>
-    </footer>
+        <div class="NationsContainer">
+            <ul>
+                <li>Australia</li>
+                <li>Brazil</li>
+                <li>Canada</li>
+                <li>China</li>
+                <li>France</li>
+                <li>Germany</li>
+                <li>Italy</li>
+                <li>Japan</li>
+                <li>Mexico</li>
+                <li>Netherlands</li>
+                <li>Poland</li>
+                <li>Singapore</li>
+                <li>Spain</li>
+                <li>Turkey</li>
+                <li>United Arab Emirates</li>
+                <li>United Kingdom</li>
+                <li>United States</li>
+            </ul>
+        </div>
+      </footer>
 
   )
 }
