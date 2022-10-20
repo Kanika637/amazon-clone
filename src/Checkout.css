@@ -20,11 +20,9 @@
   border-bottom: 1px solid lightgray;
 }
 
-.checkout__right{
-  position: fixed;
+.checkout__right {
+  margin: 20px 40px 0 180px;
   right: 0;
-  margin-right: 40px;
-  margin-top: 20px;
 }
 
 .subtotal-calculate {
