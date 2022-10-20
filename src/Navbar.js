@@ -17,7 +17,7 @@ const navItemList = [
   { id: 9, title: "Toys & Games", hrefLink: "#" },
   { id: 10, title: "Home Improvement", hrefLink: "#" },
   { id: 11, title: "Browsing History", hrefLink: "#" },
-  { id: 12, title: "Coupns", hrefLink: "#" },
+  { id: 12, title: "Coupons", hrefLink: "#" },
 ];
 
 function Navbar() {
