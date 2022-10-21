@@ -9,7 +9,7 @@ import "./AllCategories.css"
 function AllCategories() {
   return (
     <>
-      <div class="shop-by-category-heading">
+      <div className="shop-by-category-heading">
         <h1>Shop By Category</h1>
       </div>
 

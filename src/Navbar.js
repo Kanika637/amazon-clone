@@ -25,27 +25,27 @@ function Navbar() {
   return (
     <div>
       <nav
-        class="navbar navbar-black "
+        className="navbar navbar-black "
         style={{ backgroundColor: "#222f3e", color: "white" }}
       >
         <div className="navbar__complete">
           <button
-            class="navbar-toggler toggler-example hamburger__menu"
+            className="navbar-toggler toggler-example hamburger__menu"
             type="button"
             onClick={(_) => {
               toggleSideNavVisibility(true);
             }}
             style={{ color: "white" }}
           >
-            <span class="dark-blue-text hamburger__menu__icon">
-              <i class="fas fa-bars fa-1x"></i>
+            <span className="dark-blue-text hamburger__menu__icon">
+              <i className="fas fa-bars fa-1x"></i>
               <span>All</span>
             </span>
           </button>
 
           {navItemList?.map((navItem) => (
             <a
-              class="navbar-brand white-text nav__item"
+              className="navbar-brand white-text nav__item"
               key={navItem.id}
               href={navItem.hrefLink}
             >
