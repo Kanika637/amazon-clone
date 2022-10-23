@@ -1,7 +1,7 @@
 .checkout {
   display: flex;
   padding: 20px;
-  background-color: white;
+  background-color: grey;
   height: max-content;
 }
 .checkout__add {
@@ -15,14 +15,23 @@
 }
 
 .checkout__title {
-  margin-right: 10px;
-  padding: 10px;
-  border-bottom: 1px solid lightgray;
+  font-weight: 400;
+}
+.checkout_subtitle{
+  color: rgb(79, 137, 160);
+  font-weight: 400;
+  cursor: pointer;
+}
+
+.checkout__left{
+  background-color: white;
+  padding: 1rem;
+  width: 100%;
 }
 
 .checkout__right {
 }
 
 .subtotal-calculate {
-  margin-left: 47rem;
+  text-align: right;
 }

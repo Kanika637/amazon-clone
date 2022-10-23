@@ -19,7 +19,7 @@ function CheckoutProduct({ id, image, title, price, rating, reviews }) {
                 <div className='checkout_Alignment'>
                     <div className="checkoutProduct__title">{title}</div>
                     <div className="checkoutproduct__price">
-                        <small>Rs </small>
+                        <small>&#x20b9; </small>
                         <strong>{price}</strong>
                     </div>
                 </div>
