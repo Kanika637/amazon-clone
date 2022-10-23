@@ -1,7 +1,7 @@
 .checkout {
   display: flex;
   padding: 20px;
-  background-color: white;
+  background-color: #f0ecec;
   height: max-content;
 }
 .checkout__add {
@@ -15,16 +15,29 @@
 }
 
 .checkout__title {
-  margin-right: 10px;
-  padding: 10px;
-  border-bottom: 1px solid lightgray;
+  font-weight: 400;
+}
+.checkout_subtitle{
+  color: rgb(79, 137, 160);
+  font-weight: 400;
+  cursor: pointer;
+}
+
+.checkout__left{
+  background-color: white;
+  padding: 1rem;
+  width: 100%;
 }
 
 .checkout__right {
-  margin: 20px 40px 0 180px;
-  right: 0;
 }
 
-.subtotal-calculate {
-  margin-left: 47rem;
+.subtotal__calculate {
+  text-align: right;
+  font-weight: 500;
+  font-size: larger;
+}
+
+.subtotal__digits {
+  font-weight: 650;
 }

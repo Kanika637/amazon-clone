@@ -8,7 +8,7 @@
   border-radius: 3px;
   margin-left: 35px;
   border: 1px solid rgb(202, 183, 178, 0.3);
-  
+  background-color: white;
 }
 
 .subtotal_gift_text_container {
@@ -34,6 +34,12 @@
     font-weight: 500;
     margin-bottom: .2rem;
 }
+
+.subtotal__digits {
+  font-weight: 650;
+}
+
+
 .subtotal__gift {
   display: flex;
   align-items: center;
