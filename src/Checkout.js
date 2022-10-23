@@ -56,8 +56,8 @@ function Checkout({ price }) {
           <CurrencyFormat
             renderText={(value) => (
               <>
-                <p className="subtotal-calculate">
-                  Subtotal ({basket.length} items) : <strong>{value}</strong>
+                <p className="subtotal__calculate">
+                  Subtotal ({basket.length} items) : <strong className="subtotal__digits">{value}</strong>
                 </p>
               </>
             )}

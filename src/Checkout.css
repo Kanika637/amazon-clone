@@ -1,7 +1,7 @@
 .checkout {
   display: flex;
   padding: 20px;
-  background-color: grey;
+  background-color: #f0ecec;
   height: max-content;
 }
 .checkout__add {
@@ -32,6 +32,12 @@
 .checkout__right {
 }
 
-.subtotal-calculate {
+.subtotal__calculate {
   text-align: right;
+  font-weight: 500;
+  font-size: larger;
+}
+
+.subtotal__digits {
+  font-weight: 650;
 }
