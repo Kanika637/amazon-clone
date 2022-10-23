@@ -12,6 +12,29 @@
   margin-right: 1px;
   /* max-width: 4000px; */
 }
+.hide {
+  visibility: hidden;
+  height: 0px;
+}
+.show{
+  visibility: visible;
+}
+.btn-container {
+  display: flex;
+  justify-content: center;
+}
+.load-more-btn{
+  font-size: 22px;
+  border-radius: 6px;
+  text-align: center;
+  padding: 2px 19px;
+  font-family: fangsong;
+  font-weight: bold;
+}
+.load-more-btn:hover{
+  background-color: #ffeb00;
+  color: black;
+}
 /*This code is for specifying every product in rows*/
 
 .home__row {
