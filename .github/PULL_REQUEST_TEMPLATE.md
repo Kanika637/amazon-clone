@@ -17,7 +17,6 @@ Fixes:  #issue no.
 
 <!----Please delete options that are not relevant.And in order to tick the check box just put x inside them for example [x] like this----->
 
-- [] I have made this from my own.
 - [] My code follows the style guidelines of this project.
 - [] I have performed a self-review of my own code.
 - [] I have made corresponding changes to the documentation.
