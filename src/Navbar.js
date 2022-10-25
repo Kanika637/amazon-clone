@@ -1,6 +1,7 @@
-import React from "react";
+import React, { useState } from "react";
 import "./Navbar.css";
 import ArrowDropDownIcon from "@mui/icons-material/ArrowDropDown";
+import SideNav from "./SideNav";
 
 // All nav items list array
 const navItemList = [
@@ -16,36 +17,35 @@ const navItemList = [
   { id: 9, title: "Toys & Games", hrefLink: "#" },
   { id: 10, title: "Home Improvement", hrefLink: "#" },
   { id: 11, title: "Browsing History", hrefLink: "#" },
-  { id: 12, title: "Coupns", hrefLink: "#" },
+  { id: 12, title: "Coupons", hrefLink: "#" },
 ];
 
 function Navbar() {
+  const [sideNavVisibility, toggleSideNavVisibility] = useState(false);
   return (
     <div>
       <nav
-        class="navbar navbar-black "
+        className="navbar navbar-black "
         style={{ backgroundColor: "#222f3e", color: "white" }}
       >
         <div className="navbar__complete">
           <button
-            class="navbar-toggler toggler-example hamburger__menu"
+            className="navbar-toggler toggler-example hamburger__menu"
             type="button"
-            data-toggle="collapse"
-            data-target="#navbarSupportedContent1"
-            aria-controls="navbarSupportedContent1"
-            aria-expanded="false"
-            aria-label="Toggle navigation"
+            onClick={(_) => {
+              toggleSideNavVisibility(true);
+            }}
             style={{ color: "white" }}
           >
-            <span class="dark-blue-text hamburger__menu__icon">
-              <i class="fas fa-bars fa-1x"></i>
+            <span className="dark-blue-text hamburger__menu__icon">
+              <i className="fas fa-bars fa-1x"></i>
               <span>All</span>
             </span>
           </button>
 
           {navItemList?.map((navItem) => (
             <a
-              class="navbar-brand white-text nav__item"
+              className="navbar-brand white-text nav__item"
               key={navItem.id}
               href={navItem.hrefLink}
             >
@@ -54,27 +54,10 @@ function Navbar() {
             </a>
           ))}
         </div>
-
-        <div class="collapse navbar-collapse" id="navbarSupportedContent1">
-          <ul class="navbar-nav mr-auto">
-            <li class="nav-item active">
-              <a class="nav-link white-text" href="#">
-                Home <span class="sr-only">(current)</span>
-              </a>
-            </li>
-            <li class="nav-item">
-              <a class="nav-link white-text" href="#">
-                Features
-              </a>
-            </li>
-            <li class="nav-item">
-              <a class="nav-link white-text" href="#">
-                Pricing
-              </a>
-            </li>
-          </ul>
-        </div>
       </nav>
+      {sideNavVisibility && (
+        <SideNav toggleVisibility={toggleSideNavVisibility} />
+      )}
     </div>
   );
 }

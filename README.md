@@ -52,13 +52,17 @@ You must have seen a bug or problem you can fix, this is when you open a new iss
 
 ![issues3](https://user-images.githubusercontent.com/63567230/186288798-28a7e5b1-2f3e-4fa1-9ebb-27fe2220290f.JPG)
 
-- **Step 4:** Time to add your amazing issue. You have to add the title and a brief description of the issue. For further explanation, images can be added as well. See below 👇
+- **Step 4:** Select the type of issue you want to raise. It's up to you whether you want to report a bug, a documentation issue or a feature request.
 
-![issues4](https://user-images.githubusercontent.com/63567230/186288817-9c257618-005b-4ced-993b-318f51121137.JPG)
+![issues4](./src/assets/issue3.png)
 
-- **Step 5:** Submit the issue. See below 👇
+- **Step 5:** Time to add your amazing issue. You have to add the title and a brief description of the issue. For further explanation, images can be added as well. See below 👇
 
-![issues5](https://user-images.githubusercontent.com/63567230/186289012-575123a1-68a7-4fcd-a71a-9051a8ca11ff.JPG)
+![issues5](https://user-images.githubusercontent.com/63567230/186288817-9c257618-005b-4ced-993b-318f51121137.JPG)
+
+- **Step 6:** Submit the issue. See below 👇
+
+![issues6](https://user-images.githubusercontent.com/63567230/186289012-575123a1-68a7-4fcd-a71a-9051a8ca11ff.JPG)
 
 Hurray, you just made added your first issue. The managers of amazon clone will now review your issue and you will either get assigned to the issue, have it closed or a comment will be dropped for you.
 

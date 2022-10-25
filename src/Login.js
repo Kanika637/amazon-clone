@@ -56,7 +56,7 @@ function Login() {
         <div className="login__container">
             <h1 className="login__sign">Sign in</h1>
             <form> 
-                <h5 className="credential_name" id="mailText">Email or mobile phone number</h5>
+                <h5 className="credential_name" id="mailText">Email</h5>
                 <h5 className="credential_name" id="pswdText" style={{display:"none"}}>Password</h5>
                 <input type="text" className="input_box" value={email} id="mailBox"onChange={e=>setEmail(e.target.value)} style={{background:"white"}}/>
                 <input  type="password" value={password} onChange={e=>setPassword(e.target.value)} style={{display:"none"}} id="pswdBox" className="input_box"/>
