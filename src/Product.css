@@ -1,6 +1,6 @@
 .product {
   display: flex;
-  flex-direction: column;
+  flex-flow: row wrap;
   align-items: center;
   justify-content: flex-end;
   margin: 5px;
@@ -15,7 +15,8 @@
 }
 
 .product__image {
-  max-height: 200px;
+  /* max-height: 200px; */
+  height: 40%;
   width: 100%;
   object-fit: contain;
   margin-bottom: 15px;
@@ -30,6 +31,7 @@
   font-size: 0.9rem;
 }
 .product_info {
+  font-size: clamp(8px, 1rem, 15px);
   margin-bottom: 15px;
 }
 
@@ -44,6 +46,7 @@
   border-radius: 5rem;
   border-color: #ff9900;
   color: #111;
+  font-size: clamp(8px, 1rem, 15px);
 }
 
 .product__button:hover {
