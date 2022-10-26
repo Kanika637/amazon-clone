@@ -173,10 +173,7 @@ function Home() {
           </div>
         </div>
       </div>
-      <div className='btn-container'>
-        <button onClick={loadMore} className="load-more-btn">{`${show ? "Show More" : "Show Less"}`}</button>
-      </div>
-    </>
+      <a onClick={loadMore} className="load-more-btn block">{`${show ? "See all results" : "See Less Results"}`}</a></>
   )
 }
 
