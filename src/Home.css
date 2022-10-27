@@ -21,9 +21,15 @@
 }
 
 a.load-more-btn.block {
-  color: darkcyan;
+  color: #028484;
   background-color: #d9d9d9;
-  font-family: 'Abril Fatface', cursive;
+  font-family: 'emoji';
+}
+
+a.load-more-btn.block {
+  color: #028484;
+  background-color: #d9d9d9;
+  font-family: 'emoji';
 }
 
 .load-more-btn {
@@ -36,10 +42,9 @@ a.load-more-btn.block {
   font-size: 21px;
   text-align: center;
   text-decoration: none;
-  box-shadow: 0em -0.3rem 0em rgb(0 0 0 / 10%) inset;
   position: relative;
-  word-spacing: 5px;
-  letter-spacing: 1px;
+  word-spacing: 1px;
+  letter-spacing: 0px;
 }
 .load-more-btn:hover, .load-more-btn:focus {
   opacity: 0.8;
