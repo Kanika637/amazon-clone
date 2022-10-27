@@ -173,7 +173,7 @@ function Home() {
           </div>
         </div>
       </div>
-      <a onClick={loadMore} className="load-more-btn block">{`${show ? "See all results" : "See Less Results"}`}</a></>
+      <a onClick={loadMore} className="load-more-btn block">{`${show ? "See all results" : "See less results"}`}</a></>
   )
 }
 
