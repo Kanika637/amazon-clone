@@ -4,7 +4,8 @@ Hurray!, you're here!✨. This is the first step in making your contribution to 
 
 Finally, we can't wait to see your outstanding issues and pull requests. Welcome 😇❤
 
- # 📝 Table of Contents
+# 📝 Table of Contents
+
 - [Ground Rules](#rules)
 - [PR guidelines ](#pr)
 - [First Contribution](#first_contribution)
@@ -30,7 +31,7 @@ Having numerous means of contributing means working with alot of individuals whi
 - Don't forget to attach a screenshot of the final output of the work that you have done, and do mention the issue you have worked upon, while making a PR.
 - Just make sure that you push only the files that you have worked upon.
 
-# Your First Contribution  <a name = "first_contribution"></a>
+# Your First Contribution <a name = "first_contribution"></a>
 
 Is this your first time contributing to an open source project? If yes, Welcome!!✨🎉💃🏾 Here is a [great tutorial](https://app.egghead.io/playlists/how-to-contribute-to-an-open-source-project-on-github) on how to contribute to an open source project.
 
@@ -70,7 +71,7 @@ You have been assigned an issue 🥂 and are confused 😵 about where to go fro
 
 ## Getting Started <a name = "get_started"></a>
 
-_Skip all of the steps below by using Gitpod, which would automatically do all of that for you_ 
+_Skip all of the steps below by using Gitpod, which would automatically do all of that for you_
 
 [![Open in Gitpod](https://gitpod.io/button/open-in-gitpod.svg)](https://gitpod.io/#https://github.com/Kanika637/amazon-clone)
 
@@ -114,14 +115,14 @@ git checkout -b "Your Branch Name"
 A good branch name would begin with the issue ticket and the assigned issue. See below 👇
 
 ```
-// #343 is the issu ticket number and make a request is the assigned issue na
+// #343 is the issu ticket number and make a request is the assigned issue name.
 
 git checkout -b "#343-make a request"
 ```
 
 You are all set!! 🍾🎉. You can now make your changes locally. Once you are done making all your changes, you can now push code and make a pull request.
 
-## Steps to making a pull request  <a name = "raise_pr"></a>
+## Steps to making a pull request <a name = "raise_pr"></a>
 
 You have to switch to the main branch and make sure it's up to date with the amazon's clone main branch. To do so, use the following commands below.
 
@@ -157,14 +158,11 @@ Amazon-clone has certain conventions that should be adopted when contributing.
 - Commit changes to `package.json`, `.gitignore` and other meta files with `chore(filenamewithoutext): ...`
 - Commit changes to README files or comments with `docs: ...`
 - Cody style changes with `style: standard`
+
 ## Thanks to all Contributors <a name = "contributors"></a>
 
 <a href="https://github.com/Kanika637/amazon-clone/graphs/contributors"> 
 <img src="https://contrib.rocks/image?repo=Kanika637/amazon-clone" /> 
 </a>
 
-
-
-
 ## Don't forgot to give a ⭐ to the repo, if you learned something!
-
