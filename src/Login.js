@@ -70,7 +70,9 @@ function Login() {
                 <button className="loginsign_button"  type="submit" onClick={signIn}>Sign-In</button> */}
             </form>
             <p className="login_info">
-            By continuing, you agree to Amazon's <Link to={anchLink}>Conditions of Use</Link> and <Link to="/">Privacy Notice</Link>.
+            By continuing, you agree to Amazon's 
+            
+            <a href={anchLink}> Conditions of Use </a>and <Link to="/">Privacy Notice</Link>.
             <br></br>
             <br></br>
             <Link to="/">Need help?</Link>
