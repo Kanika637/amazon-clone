@@ -1,6 +1,6 @@
 .sidenav {
   position: fixed;
-  top: 0;
+  top: 50px;
   bottom: 0;
   width: 365px;
   background-color: #fff;
@@ -25,16 +25,17 @@
   align-items: center;
   color: #ffffff;
   position: fixed;
+  top: 0;
   width: 365px;
+  z-index: 1000;
 }
 
 sidenav-head::before {
-  content: "";
+  content: '';
 }
 sidenav-head::after {
-  content: "";
+  content: '';
 }
 .sidenav-body {
-  padding-top: 50px;
   margin-left: 18px;
 }
