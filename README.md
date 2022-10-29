@@ -122,7 +122,7 @@ git checkout -b "#343-make a request"
 
 You are all set!! 🍾🎉. You can now make your changes locally. Once you are done making all your changes, you can now push code and make a pull request.
 
-## Steps to making a pull request <a name = "raise_pr"></a>
+## Steps for making a pull request <a name = "raise_pr"></a>
 
 You have to switch to the main branch and make sure it's up to date with the amazon's clone main branch. To do so, use the following commands below.
 
