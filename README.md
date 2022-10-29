@@ -115,7 +115,7 @@ git checkout -b "Your Branch Name"
 A good branch name would begin with the issue ticket and the assigned issue. See below 👇
 
 ```
-// #343 is the issu ticket number and make a request is the assigned issue name.
+// "#343" is the issue ticket number and "make a request" is the assigned issue name.
 
 git checkout -b "#343-make a request"
 ```
