@@ -1,16 +1,16 @@
-import React, { useState } from "react";
-import "./Header.css";
-import logo from "./assets/amazon-logo.png";
-import { ReactComponent as LocationSvg } from "./assets/Location.svg";
-import { ReactComponent as CartSvg } from "./assets/Cart.svg";
-import { ReactComponent as UserSvg } from "./assets/User.svg";
+import React, { useState } from 'react';
+import './Header.css';
+import logo from './assets/amazon-logo.png';
+import { ReactComponent as LocationSvg } from './assets/Location.svg';
+import { ReactComponent as CartSvg } from './assets/Cart.svg';
+import { ReactComponent as UserSvg } from './assets/User.svg';
 
-import { Link } from "react-router-dom";
-import { useStateValue } from "./StateProvider";
-import { auth } from "./firebase";
-import HeaderSearchBar from "./HeaderSearchBar";
+import { Link } from 'react-router-dom';
+import { useStateValue } from './StateProvider';
+import { auth } from './firebase';
+import HeaderSearchBar from './HeaderSearchBar';
 
-function Header() {
+function Header(props) {
   const [{ basket, user }, dispatch] = useStateValue();
   const [screenWidth, setScreenWidth] = useState(window.innerWidth);
   {
@@ -37,7 +37,7 @@ function Header() {
   };
 
   const optimizedWidthSetter = debounce(updateWidth, 100);
-  window.addEventListener("resize", optimizedWidthSetter);
+  window.addEventListener('resize', optimizedWidthSetter);
 
   const renderNonMobileElements = () => {
     return (
@@ -48,7 +48,7 @@ function Header() {
     if user is already signed in it will show 
     signout*/}
           <span className="header__optionLineTwo">
-            {user ? "Sign Out" : "Sign In"}
+            {user ? 'Sign Out' : 'Sign In'}
           </span>
         </div>
         <div className="header__option">
@@ -64,7 +64,7 @@ function Header() {
       <>
         <div onClick={handleAuthentication} className="header__option">
           <UserSvg />
-          <span>{user ? user.name : "Sign In"}</span>
+          <span>{user ? user.name : 'Sign In'}</span>
         </div>
       </>
     );
@@ -89,14 +89,14 @@ function Header() {
           </span>
         </div>
       ) : (
-        ""
+        ''
       )}
       <div className="header__search">
-        <HeaderSearchBar />
+        <HeaderSearchBar onSearch={props.inputHandler} />
       </div>
       <div className="header__nav">
         {/*if there is no user then only go to login pg*/}
-        <Link to={!user && "/login"} className="header__right">
+        <Link to={!user && '/login'} className="header__right">
           {screenWidth >= 650
             ? renderNonMobileElements()
             : renderMobileElements()}
@@ -109,7 +109,7 @@ function Header() {
           {screenWidth > 860 ? (
             <div className="header__basketText">Cart</div>
           ) : (
-            ""
+            ''
           )}
         </Link>
       </div>
