@@ -1,15 +1,14 @@
 import './App.css';
-import React, { useEffect } from 'react';
+import React, { useEffect, useState } from 'react';
 import Header from './Header';
 import Home from './Home';
-import { BrowserRouter as Router, Switch, Route }
-  from "react-router-dom";
+import { BrowserRouter as Router, Switch, Route } from 'react-router-dom';
 
-import Checkout from './Checkout'
-import Login from "./Login";
-import { auth } from "./firebase";
-import { useStateValue } from './StateProvider'
-import Payment from "./Payment";
+import Checkout from './Checkout';
+import Login from './Login';
+import { auth } from './firebase';
+import { useStateValue } from './StateProvider';
+import Payment from './Payment';
 import { Elements } from '@stripe/react-stripe-js';
 import { loadStripe } from '@stripe/stripe-js';
 import Thanku from './Thanku';
@@ -21,48 +20,47 @@ import AllCategories from './Categories/AllCategories';
 import FashionBeauty from './Categories/FashionBeauty/FashionBeauty';
 import Electronics from './Categories/Electronics/Electronics';
 
-
-
-
-const stripePromise = loadStripe('pk_test_51JdCsbSDjgMnau9ncKpDOaddNIWtdhVTTV92V4ShkTzLec033vWcRQjqEUByb1s4D6vmPmH6oMK0bkBJyBlRsStp00wQV1pNuX');
+const stripePromise = loadStripe(
+  'pk_test_51JdCsbSDjgMnau9ncKpDOaddNIWtdhVTTV92V4ShkTzLec033vWcRQjqEUByb1s4D6vmPmH6oMK0bkBJyBlRsStp00wQV1pNuX'
+);
 function App() {
-  const [{ }, dispatch] = useStateValue();
   //to keep a check who is signed in/making a listner
+  const [{}, dispatch] = useStateValue();
+  //This State will keep Track of what is entered in the searchField
+  const [searchField, setSearchField] = useState('');
 
+  //updating the State from Header Component which further updating itself from HeaderSearchBar.js
+  let inputHandler = (event) => {
+    setSearchField(event.target.value);
+  };
   useEffect(() => {
     //will run only once when the app component loads
-    auth.onAuthStateChanged(authUser => {
-      console.log('USER IS >>>>', authUser);
+    auth.onAuthStateChanged((authUser) => {
       if (authUser) {
         //the user logged in/the user was logged in
-        {/*when someone will logg in it will shoot
+        {
+          /*when someone will logg in it will shoot
           the user ibto the data layer and vice versa if we 
-          logged out*/}
+          logged out*/
+        }
         dispatch({
-
           type: 'SET_USER',
-          user: authUser
-        })
-      }
-      else {
+          user: authUser,
+        });
+      } else {
         //the user is logged out
         dispatch({
           type: 'SET_USER',
-          user: null
-        })
+          user: null,
+        });
       }
-    })
-
-
-  }, [])
+    });
+  }, []);
   return (
     <>
-
       <Router>
         <div className="App">
-
           <Switch>
-
             <Route path="/thanku">
               <Header />
 
@@ -75,7 +73,6 @@ function App() {
               <Elements stripe={stripePromise}>
                 <Payment />
               </Elements>
-
             </Route>
             <Route path="/login">
               <Login />
@@ -102,15 +99,13 @@ function App() {
               <Navbar />
               <Electronics />
             </Route>
-            
+
             <Route path="/">
-              <Header />
+              <Header inputHandler={inputHandler} />
               <Navbar />
-              <Home />
+              <Home text={searchField} />
               <AllCategories />
-
             </Route>
-
           </Switch>
           <Footer />
         </div>
