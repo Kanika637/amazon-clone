@@ -57,6 +57,7 @@ function Home(props) {
       <div className="home">
         <div className="home__container">
           <Slider />
+          {/* Home__grid class will make the Array of products into grid */}
           <div className="home__grid">{ProductComponent}</div>
         </div>
       </div>
