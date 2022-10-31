@@ -1,10 +1,8 @@
 import { React, useState } from 'react';
-
 import './Home.css';
 import Product from './Product';
-import CarouselBlock from './Carousel';
 import Slider from './Carousel';
-import products from './ProductsData';
+import products from './ProductData';
 
 function Home(props) {
   const [show, setShow] = useState(false);
