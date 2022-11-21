@@ -1,15 +1,8 @@
-FROM node:16.17.0-alpine
-WORKDIR '/app'
-
-COPY package.json .
-RUN npm install
+FROM node:12-alpine
+WORKDIR /amazon-clone
 COPY . .
+RUN npm install
+CMD ["npm", "start"]
+EXPOSE 8080:3000
 
-CMD ["npm","start"]
 
-
-
-# if facing error while building image, paste there two command in terminal.
-
-# export DOCKER_BUILDKIT=0
-#export COMPOSE_DOCKER_CLI_BUILD=0

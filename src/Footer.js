@@ -31,7 +31,7 @@ function Footer() {
       </div>
       <div className="rest-footer-1">
         <div className="sec">
-          <h5 className="foot-head">Get to Know Us</h5>
+          <h5 className="foot-head">Get to Know Us More</h5>
           <ul className="foot-content">
             <li className="leading-5">
               <a href="#">About us</a>
