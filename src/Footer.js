@@ -34,7 +34,7 @@ function Footer() {
           <h5 className="foot-head">Get to Know Us More</h5>
           <ul className="foot-content">
             <li className="leading-5">
-              <a href="#">About us</a>
+              <a href="#">About Us</a>
             </li>
             <li className="leading-5">
               <a href="#">Careers</a>
