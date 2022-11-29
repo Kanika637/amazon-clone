@@ -3,7 +3,7 @@ WORKDIR /amazon-clone
 COPY . .
 RUN npm install
 CMD ["npm", "start"]
-Expose 8001
+EXPOSE 8001
 
 
 
