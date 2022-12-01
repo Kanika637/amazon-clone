@@ -7,7 +7,7 @@ import { BrowserRouter as Router, Switch, Route } from 'react-router-dom';
 import Checkout from './components/checkOut/Checkout';
 import Login from './pages/login/Login';
 import { auth } from './firebase';
-import { useStateValue } from './StateProvider';
+import { useStateValue } from './context/StateProvider';
 import Payment from './components/payment/Payment';
 import { Elements } from '@stripe/react-stripe-js';
 import { loadStripe } from '@stripe/stripe-js';

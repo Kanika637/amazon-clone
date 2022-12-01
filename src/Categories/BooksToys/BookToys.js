@@ -1,6 +1,6 @@
 import React from 'react'
-import { useStateValue } from '../../StateProvider';
 import Product from '../../components/product/Product';
+import { useStateValue } from '../../context/StateProvider';
 import "./BookToys.css"
 
 
