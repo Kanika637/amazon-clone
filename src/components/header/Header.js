@@ -78,9 +78,11 @@ function Header(props) {
 
   return (
     <div className="header">
+      
       <Link to="/">
         <img className="header__logo" src={logo} alt="Amazon logo" />
       </Link>
+      
       {screenWidth > 790 ? (
         <div className="header__locationOption">
           <span className="header__optionLineOne">Hello</span>

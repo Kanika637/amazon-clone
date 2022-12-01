@@ -1,5 +1,5 @@
 import React, { useState,useEffect} from 'react'
-import CheckoutProduct from './CheckoutProduct';
+import CheckoutProduct from './components/checkOut/CheckoutProduct';
 import "./Payment.css" 
 import { useStateValue } from './StateProvider';
 import {Link,useHistory} from "react-router-dom";

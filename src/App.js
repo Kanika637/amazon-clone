@@ -12,7 +12,7 @@ import Payment from './Payment';
 import { Elements } from '@stripe/react-stripe-js';
 import { loadStripe } from '@stripe/stripe-js';
 import Thanku from './pages/thanku/Thanku';
-import Navbar from './Navbar';
+import Navbar from './components/navbar/Navbar';
 
 import Footer from './components/footer/Footer';
 import BookToys from './Categories/BooksToys/BookToys';

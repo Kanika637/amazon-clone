@@ -1,7 +1,7 @@
 import { React, useState } from 'react';
 import './Home.css';
-import Product from '../../Product';
-import Slider from '../../Carousel';
+import Product from '../../components/product/Product';
+import Slider from '../../components/carousel/Carousel';
 import products from '../../ProductData';
 
 function Home(props) {

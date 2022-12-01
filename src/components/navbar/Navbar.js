@@ -1,7 +1,7 @@
 import React, { useState } from "react";
 import "./Navbar.css";
 import ArrowDropDownIcon from "@mui/icons-material/ArrowDropDown";
-import SideNav from "./SideNav";
+import SideNav from "../sideNav/SideNav";
 
 // All nav items list array
 const navItemList = [

@@ -1,6 +1,6 @@
 import React from 'react'
 import "./FashionBeauty.css"
-import Product from '../../Product'
+import Product from '../../components/product/Product'
 
 function FashionBeauty() {
 

@@ -54,6 +54,7 @@ function HeaderSearchBar(props) {
   const [category, setCategory] = useState('All');
 
   function handleChange(event) {
+    
     props.onSearch(event);
   }
   return (
