@@ -6,7 +6,7 @@ import {Link,useHistory} from "react-router-dom";
 import {loadStripe} from "@stripe/stripe-js";
 import {CardElement, useStripe, useElements} from '@stripe/react-stripe-js';
 import CurrencyFormat from "react-currency-format";
-import {getBasketTotal} from "../../reducer";
+import {getBasketTotal} from "../../reducer/reducer";
 import axios from '../../axios';
 import {db} from "../../firebase";
 

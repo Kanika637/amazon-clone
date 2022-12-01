@@ -3,7 +3,7 @@ import React from "react";
 import "./Checkout.css";
 import Subtotal from "../../Subtotal";
 import CheckoutProduct from "./CheckoutProduct";
-import { getBasketTotal } from "../../reducer";
+import { getBasketTotal } from "../../reducer/reducer";
 import { useStateValue } from "../../StateProvider";
 import FlipMove from "react-flip-move";
 import CurrencyFormat from "react-currency-format";
