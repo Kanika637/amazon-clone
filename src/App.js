@@ -1,7 +1,7 @@
 
 import React, { useEffect, useState } from 'react';
 import Header from './components/header/Header';
-import Home from './Home';
+import Home from './pages/home/Home';
 import { BrowserRouter as Router, Switch, Route } from 'react-router-dom';
 
 import Checkout from './components/checkOut/Checkout';
@@ -14,7 +14,7 @@ import { loadStripe } from '@stripe/stripe-js';
 import Thanku from './pages/thanku/Thanku';
 import Navbar from './Navbar';
 
-import Footer from './Footer';
+import Footer from './components/footer/Footer';
 import BookToys from './Categories/BooksToys/BookToys';
 import AllCategories from './Categories/AllCategories';
 import FashionBeauty from './Categories/FashionBeauty/FashionBeauty';

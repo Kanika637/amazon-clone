@@ -1,8 +1,8 @@
 import { React, useState } from 'react';
 import './Home.css';
-import Product from './Product';
-import Slider from './Carousel';
-import products from './ProductData';
+import Product from '../../Product';
+import Slider from '../../Carousel';
+import products from '../../ProductData';
 
 function Home(props) {
   const [show, setShow] = useState(false);
@@ -12,7 +12,6 @@ function Home(props) {
   }
 
   const filteredData = products.filter((el) => {
-    console.log(`in the filter ${props.text}`);
     // if no input the return the original
     if (props.text === '') {
       return el;
@@ -23,16 +22,15 @@ function Home(props) {
     }
   });
   const ProductComponent = filteredData.map((element,index) => {
-    console.log(`elements are ${filteredData.price}`);
     if (show) {
       return (
         <Product
+          key={index}
           title={element.title}
           price={element.price}
           image={element.image}
           rating={element.rating}
           reviews={element.reviews}
-          key={index}
         />
       );
     } else {
@@ -40,6 +38,7 @@ function Home(props) {
       } else {
         return (
           <Product
+            key={index}
             title={element.title}
             price={element.price}
             image={element.image}
