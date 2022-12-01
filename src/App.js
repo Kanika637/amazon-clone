@@ -1,17 +1,17 @@
-import './App.css';
+
 import React, { useEffect, useState } from 'react';
-import Header from './Header';
+import Header from './components/header/Header';
 import Home from './Home';
 import { BrowserRouter as Router, Switch, Route } from 'react-router-dom';
 
-import Checkout from './Checkout';
-import Login from './Login';
+import Checkout from './components/checkOut/Checkout';
+import Login from './pages/login/Login';
 import { auth } from './firebase';
 import { useStateValue } from './StateProvider';
 import Payment from './Payment';
 import { Elements } from '@stripe/react-stripe-js';
 import { loadStripe } from '@stripe/stripe-js';
-import Thanku from './Thanku';
+import Thanku from './pages/thanku/Thanku';
 import Navbar from './Navbar';
 
 import Footer from './Footer';

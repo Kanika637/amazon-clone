@@ -22,7 +22,7 @@ function Home(props) {
       return el.title.toLowerCase().includes(props.text);
     }
   });
-  const ProductComponent = filteredData.map((element) => {
+  const ProductComponent = filteredData.map((element,index) => {
     console.log(`elements are ${filteredData.price}`);
     if (show) {
       return (
@@ -32,6 +32,7 @@ function Home(props) {
           image={element.image}
           rating={element.rating}
           reviews={element.reviews}
+          key={index}
         />
       );
     } else {

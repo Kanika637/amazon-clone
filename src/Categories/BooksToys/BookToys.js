@@ -121,13 +121,14 @@ function BookToys(id, title, price, image, rating, reviews) {
       <h1 className='toys-books-heading'>Books & Toys</h1>
      
       <div className='items-container'>
-        {products.map((product) => {
+        {products.map((product,index) => {
           return (
             <Product title={product.title} 
             price={product.price} 
             image={product.image} 
             rating={product.rating} 
-            reviews={product.reviews}  />
+            reviews={product.reviews} 
+            key={index} />
        )
      }) }
       </div>

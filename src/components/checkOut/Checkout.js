@@ -1,13 +1,13 @@
 /* eslint-disable no-unused-vars */
 import React from "react";
 import "./Checkout.css";
-import Subtotal from "./Subtotal";
-import CheckoutProduct from "./CheckoutProduct";
-import { getBasketTotal } from "./reducer";
-import { useStateValue } from "./StateProvider";
+import Subtotal from "../../Subtotal";
+import CheckoutProduct from "../../CheckoutProduct";
+import { getBasketTotal } from "../../reducer";
+import { useStateValue } from "../../StateProvider";
 import FlipMove from "react-flip-move";
 import CurrencyFormat from "react-currency-format";
-import Navbar from "./Navbar";
+import Navbar from "../../Navbar";
 
 function Checkout({ price }) {
   const [{ basket, user }, dispatch] = useStateValue();
@@ -40,7 +40,7 @@ function Checkout({ price }) {
             {basket.length > 0 && <h6 className="checkout_subtitle" onClick={removeAllFromBasket}>Deselect all items</h6>}
 
             {/*This will send all the products we are adding in our basket to the shopping list using the basket variable*/}
-            {basket.map((item) => (
+            {basket.map((item,index) => (
               <CheckoutProduct
                 id={item.id}
                 price={item.price}
@@ -48,6 +48,7 @@ function Checkout({ price }) {
                 title={item.title}
                 image={item.image}
                 reviews={item.reviews}
+                key={index}
               />
             ))}
           </div>

@@ -1,14 +1,14 @@
 import React, { useState } from 'react';
 import './Header.css';
-import logo from './assets/amazon-logo.png';
-import { ReactComponent as LocationSvg } from './assets/Location.svg';
-import { ReactComponent as CartSvg } from './assets/Cart.svg';
-import { ReactComponent as UserSvg } from './assets/User.svg';
+import logo from '../../assets/amazon-logo.png';
+import { ReactComponent as LocationSvg } from '../../assets/Location.svg';
+import { ReactComponent as CartSvg } from '../../assets/Cart.svg';
+import { ReactComponent as UserSvg } from '../../assets/User.svg';
 
 import { Link } from 'react-router-dom';
-import { useStateValue } from './StateProvider';
-import { auth } from './firebase';
-import HeaderSearchBar from './HeaderSearchBar';
+import { useStateValue } from '../../StateProvider';
+import { auth } from '../../firebase';
+import HeaderSearchBar from '../searchBar/HeaderSearchBar';
 
 function Header(props) {
   const [{ basket, user }, dispatch] = useStateValue();
