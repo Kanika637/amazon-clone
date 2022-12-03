@@ -1,0 +1,41 @@
+apiVersion: apps/v1
+
+kind: Deployment
+
+metadata:
+
+  name: amazon-clone
+
+  labels:
+
+    app: nginx
+
+spec:
+
+  replicas: 3
+
+  selector:
+
+    matchLabels:
+
+      app: nginx
+
+  template:
+
+    metadata:
+
+      labels:
+
+        app: nginx
+
+    spec:
+
+      containers:
+
+      - name: nginx
+
+        image: kanika26/my-images:myfirstpush
+
+        ports:
+
+        - containerPort: 80
