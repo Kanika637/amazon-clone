@@ -1,13 +1,14 @@
 /* eslint-disable no-unused-vars */
 import React from 'react';
 import './Checkout.css';
-import Subtotal from '../../Subtotal';
+// import Subtotal from '../../Subtotal';
 import CheckoutProduct from '../checkoutProduct/CheckoutProduct';
 import { getBasketTotal } from '../../reducer';
 import { useStateValue } from '../../StateProvider';
 import FlipMove from 'react-flip-move';
 import CurrencyFormat from 'react-currency-format';
 import Navbar from '../navbar/Navbar';
+import Subtotal from '../subtotal/Subtotal';
 
 function Checkout({ price }) {
   const [{ basket, user }, dispatch] = useStateValue();
