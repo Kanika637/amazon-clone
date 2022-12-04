@@ -2,7 +2,7 @@
 import React from 'react';
 import './Checkout.css';
 import Subtotal from '../../Subtotal';
-import CheckoutProduct from '../../CheckoutProduct';
+import CheckoutProduct from '../checkoutProduct/CheckoutProduct';
 import { getBasketTotal } from '../../reducer';
 import { useStateValue } from '../../StateProvider';
 import FlipMove from 'react-flip-move';
