@@ -1,0 +1,43 @@
+.checkout {
+  display: flex;
+  padding: 20px;
+  background-color: #f0ecec;
+  height: max-content;
+}
+.checkout__add {
+  margin-bottom: 100px;
+  width: 100%;
+  background-color: wheat;
+  margin-top: -20px;
+  margin-left: -20px;
+  margin-right: 50px;
+  height: auto;
+}
+
+.checkout__title {
+  font-weight: 400;
+}
+.checkout_subtitle{
+  color: rgb(79, 137, 160);
+  font-weight: 400;
+  cursor: pointer;
+}
+
+.checkout__left{
+  background-color: white;
+  padding: 1rem;
+  width: 100%;
+}
+
+.checkout__right {
+}
+
+.subtotal__calculate {
+  text-align: right;
+  font-weight: 500;
+  font-size: larger;
+}
+
+.subtotal__digits {
+  font-weight: 650;
+}
