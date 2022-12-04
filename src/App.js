@@ -11,7 +11,7 @@ import { useStateValue } from './StateProvider';
 import Payment from './components/payment/Payment';
 import { Elements } from '@stripe/react-stripe-js';
 import { loadStripe } from '@stripe/stripe-js';
-import Thanku from './Thanku';
+import Thanku from './components/thanku/Thanku';
 import Navbar from './components/navbar/Navbar';
 
 import Footer from './components/footer/Footer';
