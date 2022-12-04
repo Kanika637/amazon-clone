@@ -1,7 +1,7 @@
 import React, { useState } from 'react';
 import './Login.css';
 import { Link, useHistory } from 'react-router-dom';
-import { auth } from '../../firebase';
+import { auth } from '../../API/firebase';
 function Login() {
   const anchLink = `https://amazon.in/gp/help/customer/display.html/ref=ap_signin_notification_condition_of_use?ie=UTF8&nodeId=200545940`;
   const history = useHistory();

@@ -7,7 +7,7 @@ import { ReactComponent as UserSvg } from '../../assets/User.svg';
 
 import { Link } from 'react-router-dom';
 import { useStateValue } from '../../store/StateProvider';
-import { auth } from '../../firebase';
+import { auth } from '../../API/firebase';
 import HeaderSearchBar from './HeaderSearchBar';
 
 function Header(props) {

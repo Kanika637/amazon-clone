@@ -7,8 +7,8 @@ import { loadStripe } from '@stripe/stripe-js';
 import { CardElement, useStripe, useElements } from '@stripe/react-stripe-js';
 import CurrencyFormat from 'react-currency-format';
 import { getBasketTotal } from '../../store/reducer';
-import axios from '../../axios';
-import { db } from '../../firebase';
+import axios from '../../API/axios';
+import { db } from '../../API/firebase';
 
 // importing some hooks from stripe
 const promise = loadStripe(
