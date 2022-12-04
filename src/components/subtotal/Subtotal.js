@@ -6,8 +6,8 @@ import CurrencyFormat from 'react-currency-format';
 // import { getBasketTotal } from './reducer';
 import { useHistory } from 'react-router-dom';
 import { ReactComponent as TickSvg } from '../../assets/tick.svg';
-import { useStateValue } from '../../StateProvider';
-import { getBasketTotal } from '../../reducer';
+import { useStateValue } from '../../store/StateProvider';
+import { getBasketTotal } from '../../store/reducer';
 
 function Subtotal() {
   //provide browser history

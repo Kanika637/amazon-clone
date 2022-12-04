@@ -7,7 +7,7 @@ import { BrowserRouter as Router, Switch, Route } from 'react-router-dom';
 import Checkout from '../src/components/checkout/Checkout';
 import Login from './components/login/Login';
 import { auth } from './firebase';
-import { useStateValue } from './StateProvider';
+// import { useStateValue } from './store/StateProvider';
 import Payment from './components/payment/Payment';
 import { Elements } from '@stripe/react-stripe-js';
 import { loadStripe } from '@stripe/stripe-js';
@@ -19,6 +19,7 @@ import BookToys from './Categories/BooksToys/BookToys';
 import AllCategories from './Categories/AllCategories';
 import FashionBeauty from './Categories/FashionBeauty/FashionBeauty';
 import Electronics from './Categories/Electronics/Electronics';
+import { useStateValue } from './store/StateProvider';
 
 const stripePromise = loadStripe(
   'pk_test_51JdCsbSDjgMnau9ncKpDOaddNIWtdhVTTV92V4ShkTzLec033vWcRQjqEUByb1s4D6vmPmH6oMK0bkBJyBlRsStp00wQV1pNuX'

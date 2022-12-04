@@ -6,7 +6,7 @@ import { ReactComponent as CartSvg } from '../../assets/Cart.svg';
 import { ReactComponent as UserSvg } from '../../assets/User.svg';
 
 import { Link } from 'react-router-dom';
-import { useStateValue } from '../../StateProvider';
+import { useStateValue } from '../../store/StateProvider';
 import { auth } from '../../firebase';
 import HeaderSearchBar from './HeaderSearchBar';
 

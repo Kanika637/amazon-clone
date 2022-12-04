@@ -1,6 +1,7 @@
 import React from 'react';
 import Product from '../../components/product/Product';
-import { useStateValue } from '../../StateProvider';
+import { useStateValue } from '../../store/StateProvider';
+// import { useStateValue } from '../../store/StateProvider';
 // import Product from '../../Product';
 import './BookToys.css';
 

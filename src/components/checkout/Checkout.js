@@ -3,12 +3,13 @@ import React from 'react';
 import './Checkout.css';
 // import Subtotal from '../../Subtotal';
 import CheckoutProduct from '../checkoutProduct/CheckoutProduct';
-import { getBasketTotal } from '../../reducer';
-import { useStateValue } from '../../StateProvider';
+import { getBasketTotal } from '../../store/reducer';
+// import { useStateValue } from '../../store/StateProvider';
 import FlipMove from 'react-flip-move';
 import CurrencyFormat from 'react-currency-format';
 import Navbar from '../navbar/Navbar';
 import Subtotal from '../subtotal/Subtotal';
+import { useStateValue } from '../../store/StateProvider';
 
 function Checkout({ price }) {
   const [{ basket, user }, dispatch] = useStateValue();

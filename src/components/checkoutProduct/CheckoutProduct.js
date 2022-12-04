@@ -1,7 +1,7 @@
 /* eslint-disable no-unused-vars */
 import React from 'react';
 import './CheckoutProduct.css';
-import { useStateValue } from '../../StateProvider';
+import { useStateValue } from '../../store/StateProvider';
 
 function CheckoutProduct({ id, image, title, price, rating, reviews }) {
   const [{ basket }, dispatch] = useStateValue();
