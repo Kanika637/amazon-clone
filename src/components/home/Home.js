@@ -1,8 +1,9 @@
 import { React, useState } from 'react';
 import './Home.css';
-import Product from '../../Product';
+// import Product from '../../Product';
 import products from '../../ProductData';
 import CarouselBlock from '../carousel/Carousel';
+import Product from '../product/Product';
 
 function Home(props) {
   const [show, setShow] = useState(false);
