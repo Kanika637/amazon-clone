@@ -7,7 +7,7 @@ import { getBasketTotal } from '../../reducer';
 import { useStateValue } from '../../StateProvider';
 import FlipMove from 'react-flip-move';
 import CurrencyFormat from 'react-currency-format';
-import Navbar from '../../Navbar';
+import Navbar from '../navbar/Navbar';
 
 function Checkout({ price }) {
   const [{ basket, user }, dispatch] = useStateValue();
