@@ -1,14 +1,14 @@
 import React, { useState } from 'react';
 import './Header.css';
-import logo from './assets/amazon-logo.png';
-import { ReactComponent as LocationSvg } from './assets/Location.svg';
-import { ReactComponent as CartSvg } from './assets/Cart.svg';
-import { ReactComponent as UserSvg } from './assets/User.svg';
+import logo from '../../assets/amazon-logo.png';
+import { ReactComponent as LocationSvg } from '../../assets/Location.svg';
+import { ReactComponent as CartSvg } from '../../assets/Cart.svg';
+import { ReactComponent as UserSvg } from '../../assets/User.svg';
 
 import { Link } from 'react-router-dom';
-import { useStateValue } from './StateProvider';
-import { auth } from './firebase';
-import HeaderSearchBar from './HeaderSearchBar';
+import { useStateValue } from "../../context/StateProvider";
+import { auth } from '../../firebase';
+import HeaderSearchBar from '../searchBar/HeaderSearchBar';
 
 function Header(props) {
   const [{ basket, user }, dispatch] = useStateValue();
@@ -78,9 +78,11 @@ function Header(props) {
 
   return (
     <div className="header">
+      
       <Link to="/">
         <img className="header__logo" src={logo} alt="Amazon logo" />
       </Link>
+      
       {screenWidth > 790 ? (
         <div className="header__locationOption">
           <span className="header__optionLineOne">Hello</span>
