@@ -1,4 +1,5 @@
 import React, { useState } from 'react';
+import { useHistory } from "react-router-dom";
 import './Header.css';
 import logo from '../../assets/amazon-logo.png';
 import { ReactComponent as LocationSvg } from '../../assets/Location.svg';
@@ -9,21 +10,46 @@ import { Link } from 'react-router-dom';
 import { useStateValue } from "../../context/StateProvider";
 import { auth } from '../../firebase';
 import HeaderSearchBar from '../searchBar/HeaderSearchBar';
+import { useEffect } from 'react';
 
 function Header(props) {
   const [{ basket, user }, dispatch] = useStateValue();
   const [screenWidth, setScreenWidth] = useState(window.innerWidth);
+  const [value, setValue] = useState(false);
+
   {
     /*this will help you 
     signout*/
   }
+  let history=useHistory();
+  const handleAuthentication = () => {
+    if (user) {
+      auth.signOut();
+      setValue(true)
+    }
+  };
+  useEffect(()=>{
+    if(user){
+      setValue(false)
+    }
+    else setValue(true)
+   let timer=setTimeout(()=>{
+    setValue(false)
+    if(user===undefined){
+      setValue(true)
+    }
+    setValue(false)
+   },7000)
+
+   return ()=> clearTimeout(timer)
+  },[user])
 
   // Add renderOnResize function
   const updateWidth = () => {
     let width = window.innerWidth;
     setScreenWidth(width);
   };
-
+  
   const debounce = (func, time) => {
     let timer;
     return function () {
@@ -42,14 +68,25 @@ function Header(props) {
   const renderNonMobileElements = () => {
     return (
       <>
-        <div onClick={handleAuthentication} className="header__option">
-          <span className="header__optionLineOne">Hello, {user?.name}</span>
+        <div className="header__option relative">
+          <span className="header__optionLineOne">Hello, {user ? user?.email.slice(0,7):'user'}</span>
           {/*this will handle the authentication
     if user is already signed in it will show 
     signout*/}
-          <span className="header__optionLineTwo">
+          <span className="header__optionLineTwo br-2"  onClick={user ?handleAuthentication:()=>history.push('/login')}>
             {user ? 'Sign Out' : 'Sign In'}
           </span>
+          {(value) ? <>
+              <div class="nav_arrow"></div>
+            <div className="box">
+              <div class="signupbtn" onClick={()=>history.push('/login')}>
+                Sign In
+              </div>
+              <div class="text">
+                New customer?<span class="link" onClick={()=>history.push('/login')}> Start here.</span>
+              </div>
+            </div>
+            </>:null}
         </div>
         <div className="header__option">
           <span className="header__optionLineOne">Returns</span>
@@ -64,25 +101,19 @@ function Header(props) {
       <>
         <div onClick={handleAuthentication} className="header__option">
           <UserSvg />
-          <span>{user ? user.name : 'Sign In'}</span>
+          <span>{user ? user?.email.slice(0,7) : 'Sign In'}</span>
         </div>
       </>
     );
   };
 
-  const handleAuthentication = () => {
-    if (user) {
-      auth.signOut();
-    }
-  };
-
   return (
     <div className="header">
-      
+
       <Link to="/">
         <img className="header__logo" src={logo} alt="Amazon logo" />
       </Link>
-      
+
       {screenWidth > 790 ? (
         <div className="header__locationOption">
           <span className="header__optionLineOne">Hello</span>
@@ -98,11 +129,11 @@ function Header(props) {
       </div>
       <div className="header__nav">
         {/*if there is no user then only go to login pg*/}
-        <Link to={!user && '/login'} className="header__right">
+        <div className="header__right">
           {screenWidth >= 650
             ? renderNonMobileElements()
             : renderMobileElements()}
-        </Link>
+        </div>
         <Link to="/checkout" className="header__checkout">
           <div className="header__optionBasket">
             <CartSvg />
