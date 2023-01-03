@@ -1,7 +1,7 @@
 /* eslint-disable no-unused-vars */
 import React from 'react'
 import "./CheckoutProduct.css";
-import { useStateValue } from './StateProvider';
+import { useStateValue } from "../../context/StateProvider";
 
 function CheckoutProduct({ id, image, title, price, rating, reviews }) {
     const [{ basket }, dispatch] = useStateValue();
@@ -28,7 +28,7 @@ function CheckoutProduct({ id, image, title, price, rating, reviews }) {
                     {Array(rating)
                         .fill()
                         .map((_, i) => (
-                            <p>⭐</p>
+                            <p key={i}>⭐</p>
                         ))}
                     <span className='product__reviews'>({reviews})</span>
                 </div>

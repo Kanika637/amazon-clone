@@ -1,6 +1,6 @@
 import React from 'react'
 import "./FashionBeauty.css"
-import Product from '../../Product'
+import Product from '../../components/product/Product'
 
 function FashionBeauty() {
 
@@ -100,13 +100,14 @@ function FashionBeauty() {
     <>
       <h1 className='fashion-beauty-category-heading'>Fashion & Beauty</h1>
        <div className='items-container'>
-        {products.map((product) => {
+        {products.map((product,index) => {
           return (
             <Product title={product.title} 
             price={product.price} 
             image={product.image} 
             rating={product.rating} 
-            reviews={product.reviews}  />
+            reviews={product.reviews}  
+            key={index}/>
        )
      }) }
       </div>

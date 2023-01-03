@@ -123,8 +123,63 @@ font-size: 14px;
   width: 10vw;
   color: white;
   margin-left: 10px;
+  }
+.br-2:hover{
+  border:0.5px solid white;
+  width: max-content;
+  padding:0.125rem;
 }
 
+.relative{
+  position: relative;
+}
+
+.nav_arrow{
+  clip-path: polygon(50% 0%, 0% 100%, 100% 100%);
+  background-color: white;
+  position: absolute;
+  height: 8px;
+  width: 16px;
+  top: 50px;
+  left: 55px;
+}
+.box{
+  width: 177px;
+    height: 75px;
+    background-color: white;
+    position: absolute;
+    left: -23px;
+    top: 57px;
+    box-shadow: 2px 3px 9px 0px rgba(0,0,0,0.75);
+}
+.signupbtn{
+    background: rgb(237, 171, 50);
+    width: 50%;
+    margin: 0 auto;
+    text-align: center;
+    margin-top: 9px;
+    padding: 0.25rem;
+}
+.signupbtn:hover{
+  background: rgb(252, 165, 3);
+  box-shadow: 0 2px 4px rgb(237, 171, 50);
+}
+.text{
+  color: rgb(128, 128, 128);
+    font-size: 0.75rem;
+    text-align: center;
+    margin-top: 5px;
+    font-weight: 600;
+}
+.link{
+  color: #0008ff;
+  font-weight: 700;
+  margin-left: 5px;
+  cursor: pointer;
+}
+.link:hover{
+  border-bottom: 1px solid blue;
+}
 .header__option a:hover, a:visited, a:link, a:active{
   text-decoration: none;
 }
@@ -136,6 +191,7 @@ font-size: 14px;
 .header__optionLineTwo {
   font-weight: 700;
   font-size: clamp(12px, 1.5vw, 18px);
+  cursor: pointer;
 }
 
 .header__checkout{
