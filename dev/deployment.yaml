@@ -14,7 +14,7 @@ spec:
         app: amazon-clone
     spec:
       containers:
-      - image: kanika26/my-images:myfirstpush
+      - image: jaideep29/zomato:zomato-clone
         name: amazon-clone
         ports:
         - containerPort: 80
