@@ -1,0 +1,12 @@
+apiVersion: v1
+kind: Service
+metadata:
+  name: myapp-service
+spec:
+  selector:
+    app: amazon-clone
+  ports:
+  - port: 8080
+    protocol: TCP
+    targetPort: 8080
+  

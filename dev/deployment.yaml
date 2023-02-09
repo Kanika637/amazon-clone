@@ -1,0 +1,19 @@
+apiVersion: apps/v1
+kind: Deployment
+metadata:
+  name: amazon-clone1
+spec:
+  selector:
+    matchLabels:
+      app: amazon-clone
+  replicas: 2
+  template:
+    metadata:
+      labels:
+        app: amazon-clone
+    spec:
+      containers:
+      - name: amazon-clone
+        image: kanika26/my-images:myfirstpush
+        ports:
+        - containerPort: 8080
