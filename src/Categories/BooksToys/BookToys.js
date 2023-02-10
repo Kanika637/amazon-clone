@@ -46,7 +46,7 @@ function BookToys(id, title, price, image, rating, reviews) {
          title:"Toyshine Foosball, Mini Football, 4 Rods, Indoor Sport Table Soccer Game for Adults and Kids",
           price:1299,
           image:"https://m.media-amazon.com/images/I/71TM-qejV3L._AC_UL480_FMwebp_QL65_.jpg",
-          rating:4,
+          rating:5,
           reviews:2234,
 
     },
