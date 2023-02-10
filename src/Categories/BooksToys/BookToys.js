@@ -1,11 +1,12 @@
 import React from 'react'
 import Product from '../../components/product/Product';
 import { useStateValue } from '../../context/StateProvider';
+import usePageMeta from '../../hooks/usePageMeta';
 import "./BookToys.css"
 
 
 function BookToys(id, title, price, image, rating, reviews) {
-
+   usePageMeta("Books and toys - Amazon Clone","Shop online buy toys, books")
   const products = [
     {
       title:'Storio Kids Toys LCD Writing Tablet 8.5Inch E-Note Pad Best Birthday Gift for Girls Boys',
