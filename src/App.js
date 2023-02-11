@@ -1,9 +1,7 @@
-
 import React, { useEffect, useState } from 'react';
 import Header from './components/header/Header';
 import Home from './pages/home/Home';
 import { BrowserRouter as Router, Switch, Route } from 'react-router-dom';
-
 import Checkout from './components/checkOut/Checkout';
 import Login from './pages/login/Login';
 import { auth } from './firebase';
@@ -56,8 +54,10 @@ function App() {
       }
     });
   }, []);
+  const helmetContext = {};
   return (
     <>
+    
       <Router>
         <div className="App">
           <Switch>

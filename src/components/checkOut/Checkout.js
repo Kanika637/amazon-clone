@@ -8,8 +8,10 @@ import FlipMove from "react-flip-move";
 import CurrencyFormat from "react-currency-format";
 import Navbar from "../navbar/Navbar";
 import { useStateValue } from "../../context/StateProvider";
+import usePageMeta from "../../hooks/usePageMeta";
 
 function Checkout({ price }) {
+  usePageMeta("Checkout - Amazon Clone","")
   const [{ basket, user }, dispatch] = useStateValue();
 
   const Finalproducts = ({ basket }) => (

@@ -9,6 +9,7 @@ import CurrencyFormat from "react-currency-format";
 import {getBasketTotal} from "../../reducer/reducer";
 import axios from '../../axios';
 import {db} from "../../firebase";
+import usePageMeta from '../../hooks/usePageMeta';
 
 
 // importing some hooks from stripe
@@ -17,6 +18,7 @@ const promise=loadStripe('pk_test_51JdCsbSDjgMnau9ncKpDOaddNIWtdhVTTV92V4ShkTzLe
 
 
 function Payment() {
+    usePageMeta("Payments - Amazon Clone","Shop with us")
     const[{basket,user},dispatch]=useStateValue();
     const history=useHistory();
 
