@@ -261,6 +261,15 @@ const products = [
     rating: 4,
     reviews: 2707,
   },
+  {
+    title:
+      'Echo Dot (3rd Gen)  New and improved smart speaker with Alexa (Black)',
+    visibility: false,
+    price: 3499,
+    image: 'https://m.media-amazon.com/images/W/IMAGERENDERING_521856-T2/images/I/61WUqJd4dfS._SX522_.jpg',
+    rating: 4,
+    reviews: 2707,
+  },
 ];
 
 module.exports = products;
