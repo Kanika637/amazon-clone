@@ -17,6 +17,7 @@ import BookToys from './Categories/BooksToys/BookToys';
 import AllCategories from './Categories/AllCategories';
 import FashionBeauty from './Categories/FashionBeauty/FashionBeauty';
 import Electronics from './Categories/Electronics/Electronics';
+import Signup from './pages/signup/Signup';
 
 const stripePromise = loadStripe(
   'pk_test_51JdCsbSDjgMnau9ncKpDOaddNIWtdhVTTV92V4ShkTzLec033vWcRQjqEUByb1s4D6vmPmH6oMK0bkBJyBlRsStp00wQV1pNuX'
@@ -76,6 +77,9 @@ function App() {
             </Route>
             <Route path="/login">
               <Login />
+            </Route>
+            <Route path="/signup">
+              <Signup />
             </Route>
             <Route path="/checkout">
               <Header />
