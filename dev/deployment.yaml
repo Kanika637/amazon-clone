@@ -1,0 +1,20 @@
+apiVersion: apps/v1
+kind: Deployment
+metadata:
+  name: amazon-clone
+spec:
+  replicas: 1
+  revisionHistoryLimit: 3
+  selector:
+    matchLabels:
+      app: amazon-clone
+  template:
+    metadata:
+      labels:
+        app: amazon-clone
+    spec:
+      containers:
+      - image: jaideep29/zomato:zomato-clone
+        name: amazon-clone
+        ports:
+        - containerPort: 80

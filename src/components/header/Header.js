@@ -17,10 +17,10 @@ function Header(props) {
   const [screenWidth, setScreenWidth] = useState(window.innerWidth);
   const [value, setValue] = useState(false);
 
-  {
+  // {
     /*this will help you 
     signout*/
-  }
+  // }
   let history=useHistory();
   const handleAuthentication = () => {
     if (user) {
@@ -77,13 +77,13 @@ function Header(props) {
             {user ? 'Sign Out' : 'Sign In'}
           </span>
           {(value) ? <>
-              <div class="nav_arrow"></div>
+              <div className="nav_arrow"></div>
             <div className="box">
-              <div class="signupbtn" onClick={()=>history.push('/login')}>
+              <div className="signupbtn" onClick={()=>history.push('/login')}>
                 Sign In
               </div>
-              <div class="text">
-                New customer?<span class="link" onClick={()=>history.push('/login')}> Start here.</span>
+              <div className="text">
+                New customer?<span className="link" onClick={()=>history.push('/login')}> Start here.</span>
               </div>
             </div>
             </>:null}

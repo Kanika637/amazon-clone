@@ -5,14 +5,16 @@ import { Link } from 'react-router-dom';
 import Row from 'react-bootstrap/Row';
 import Col from 'react-bootstrap/Col';
 import "./AllCategories.css"
+import usePageMeta from '../hooks/usePageMeta';
 
 function AllCategories() {
+  usePageMeta("All Categories | amazon-clone","All Categories - Online Shoppping site");
   return (
     <>
       <div className="shop-by-category-heading">
         <h1>Shop By Category</h1>
       </div>
-
+      
       <Row className='rows'>
         <Col>
           <Card style={{ width: '18rem' }}>
@@ -68,7 +70,7 @@ function AllCategories() {
           </Card>
         </Col>
       </Row>
-
+      
     </>
   )
 }

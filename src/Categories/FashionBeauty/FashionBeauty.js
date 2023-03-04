@@ -1,9 +1,10 @@
 import React from 'react'
 import "./FashionBeauty.css"
 import Product from '../../components/product/Product'
+import usePageMeta from '../../hooks/usePageMeta'
 
 function FashionBeauty() {
-
+  usePageMeta("Fashion Beauty - Amazon Clone","By Shoes Clothes, Branded Clothes, Denim Watches");
   const products = [
     {
       title:"Men's Cotton Blend Full Sleeve Shirt | Stylish Printed Casual Wear Shirt for",

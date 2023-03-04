@@ -1,8 +1,10 @@
 import React from 'react'
 import Product from '../../components/product/Product'
+import usePageMeta from '../../hooks/usePageMeta'
 import "./Electronics.css"
 
 function Electronics() {
+  usePageMeta("Electronics - Amazon Clone","Shop online digital products using amazon clone");
   const products=[{
 title:"boAt Airdopes 121v2 True Wireless Earbuds with Upto 14 Hours Playback, 8MM Drivers, Battery Indicators,",
 price:999,

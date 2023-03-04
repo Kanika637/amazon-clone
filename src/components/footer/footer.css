@@ -38,10 +38,14 @@ a {
     background-color: #222f3f;
     padding: 3% 10%;
     text-align: center;
+
     display: flex;
     flex-direction: column;
     justify-content: center;
     align-items: center;
+
+    margin-bottom: -3.5rem;
+
 }
 
 .footer-countries {
@@ -69,7 +73,53 @@ a {
 
 .rest-footer-2 img {
     width: 7rem;
-    
+
+    height: 30px;
+}
+
+.rest-footer-2 ul {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: #fff;
+    margin: 3rem;
+}
+
+.rest-footer-2 ul li {
+    list-style: none;
+    margin-left: 2rem;
+    margin-right: 2rem;
+}
+
+.rest-footer-2 ul li span {
+    background-color: #222f3f;
+    border: 1px solid #adadad;
+    border-radius: 3px;
+    padding: 7.5px 15px;
+    font-size: 1rem;
+    font-weight: 500;
+    cursor: pointer;
+}
+
+.countries ul{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap;
+    background-color: #222f3f;
+    text-align: center;
+    margin: 0;
+}
+
+.countries ul li {
+    color: #fff;
+    margin: 10px;
+    cursor: pointer;
+    list-style: none;
+    padding: 8px;
+    font-size: 1rem;
+    font-weight: 500;
+
 }
 
 .footer-line {
