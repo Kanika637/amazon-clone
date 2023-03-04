@@ -4,7 +4,6 @@ metadata:
   name: amazon-clone
 spec:
   replicas: 1
-  revisionHistoryLimit: 3
   selector:
     matchLabels:
       app: amazon-clone
@@ -14,7 +13,7 @@ spec:
         app: amazon-clone
     spec:
       containers:
-      - image: jaideep29/zomato:zomato-clone
-        name: amazon-clone
+      - name: amazon-clone
+        image: kanika26/my-images:amazon-clone
         ports:
-        - containerPort: 80
+        - containerPort: 3000

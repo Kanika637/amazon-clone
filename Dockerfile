@@ -3,7 +3,3 @@ WORKDIR /amazon-clone
 COPY . .
 RUN npm install
 CMD ["npm", "start"]
-
-
-
-
