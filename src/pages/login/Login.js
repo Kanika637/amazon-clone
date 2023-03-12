@@ -81,7 +81,9 @@ function Login() {
             
         </div>
         <br></br>
-        <button className="loginregister_button" onClick={register}>Create your Amazon account</button>
+        <Link to="/signup">
+        <button className="loginregister_button">Create your Amazon account</button>
+        </Link>
         </div>
     )
 }
