@@ -2,7 +2,11 @@ import React from 'react'
 import "./footer.css"
 import { useState } from 'react';
 import Divider from '@material-ui/core/Divider';
+
+import amnLogo from '../src/assets/amazon-logo.png';
+
 import logo from './amazon-logo.png';
+
 function Footer() {
 
   const d = new Date()
@@ -128,6 +132,32 @@ function Footer() {
       <div className='footer-line'>
       </div>
       <div className="rest-footer-2">
+
+        <img src={amnLogo} alt="logo"></img>
+        <div className='footer-countries'>
+          <div className='countries'>
+            
+            <li>Australia</li>
+            <li>Brazil</li>
+            <li>Canada</li>
+            <li>China</li>
+            <li>France</li>
+            <li>Germany</li>
+            <li>Italy</li>
+            <li>Japan</li>
+            <li>Mexico</li>
+            <li>NetherLands</li>
+            <li>Poland</li>
+            <li>Singapore</li>
+            <li>Spain</li>
+            <li>Turkey</li>
+            <li>United Arab Emirates</li>
+            <li>United Kingdoms</li>
+            <li>United States</li>
+           
+          </div>
+        </div>
+
         <ul>
           <li><img src={logo} alt="logo" /></li>
           <li><span>English</span></li>
@@ -153,6 +183,7 @@ function Footer() {
           <li>United Kingdom</li>
           <li>United States</li>
         </ul>
+
       </div>
       <div className="base">
         <div className='upper-base'>
