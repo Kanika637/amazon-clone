@@ -1,5 +1,5 @@
 import React, { useState } from 'react';
-import { useHistory } from "react-router-dom";
+import { useNavigate } from "react-router-dom";
 import './Header.css';
 import logo from '../../assets/amazon-logo.png';
 import { ReactComponent as LocationSvg } from '../../assets/Location.svg';
@@ -21,7 +21,7 @@ function Header(props) {
     /*this will help you 
     signout*/
   // }
-  let history=useHistory();
+  let navigate=useNavigate();
   const handleAuthentication = () => {
     if (user) {
       auth.signOut();
@@ -73,17 +73,17 @@ function Header(props) {
           {/*this will handle the authentication
     if user is already signed in it will show 
     signout*/}
-          <span className="header__optionLineTwo br-2"  onClick={user ?handleAuthentication:()=>history.push('/login')}>
+          <span className="header__optionLineTwo br-2"  onClick={user ?handleAuthentication:()=>navigate('/login')}>
             {user ? 'Sign Out' : 'Sign In'}
           </span>
           {(value) ? <>
               <div className="nav_arrow"></div>
             <div className="box">
-              <div className="signupbtn" onClick={()=>history.push('/login')}>
+              <div className="signupbtn" onClick={()=>navigate('/login')}>
                 Sign In
               </div>
               <div className="text">
-                New customer?<span className="link" onClick={()=>history.push('/login')}> Start here.</span>
+                New customer?<span className="link" onClick={()=>navigate('/login')}> Start here.</span>
               </div>
             </div>
             </>:null}

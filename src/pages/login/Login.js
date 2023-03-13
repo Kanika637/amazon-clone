@@ -1,10 +1,10 @@
 import React,{useState} from 'react'
 import "./Login.css"
-import {Link, useHistory} from "react-router-dom";
+import {Link,useNavigate} from "react-router-dom";
 import {auth} from "../../firebase";
 function Login() {
     const anchLink=`https://amazon.in/gp/help/customer/display.html/ref=ap_signin_notification_condition_of_use?ie=UTF8&nodeId=200545940`;
-    const history=useHistory();
+    const navigate=useNavigate();
     const[email,setEmail]=useState('');
     const[password,setPassword]=useState('');
 
@@ -18,7 +18,7 @@ function Login() {
             we will redirect to the homepage*/}
             
             if(auth){
-            history.push("/")}
+            navigate("/")}
         })
         .catch(error=>alert(error.message))
     }
@@ -42,7 +42,7 @@ function Login() {
         .then((auth)=>{
             console.log(auth);
             if(auth){
-                history.push("/")
+                navigate("/")
             }
         })
         .catch(error=>alert(error.message))

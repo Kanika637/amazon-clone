@@ -2,7 +2,7 @@ import React, { useState,useEffect} from 'react'
 import CheckoutProduct from '../checkOut/CheckoutProduct';
 import "./Payment.css" 
 import { useStateValue } from "../../context/StateProvider";
-import {Link,useHistory} from "react-router-dom";
+import {Link,useNavigate} from "react-router-dom";
 import {loadStripe} from "@stripe/stripe-js";
 import {CardElement, useStripe, useElements} from '@stripe/react-stripe-js';
 import CurrencyFormat from "react-currency-format";
@@ -20,7 +20,7 @@ const promise=loadStripe('pk_test_51JdCsbSDjgMnau9ncKpDOaddNIWtdhVTTV92V4ShkTzLe
 function Payment() {
     usePageMeta("Payments - Amazon Clone","Shop with us")
     const[{basket,user},dispatch]=useStateValue();
-    const history=useHistory();
+    const navigate=useNavigate();
 
     //hooks from stripe
 
@@ -84,8 +84,7 @@ const[error,setError]=useState(null);
             setSucceeded(true);
             setError(null);
             setProcessing(false);
-            history.replace("./orders");
-        
+            navigate('./orders', { replace: true });
 
         })
 
