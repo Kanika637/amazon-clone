@@ -1,7 +1,7 @@
 import React, { useEffect, useState } from 'react';
 import Header from './components/header/Header';
 import Home from './pages/home/Home';
-import { BrowserRouter as Router, Switch, Route } from 'react-router-dom';
+import { BrowserRouter,Routes, Route } from 'react-router-dom';
 import Checkout from './components/checkOut/Checkout';
 import Login from './pages/login/Login';
 import { auth } from './firebase';
@@ -55,25 +55,24 @@ function App() {
       }
     });
   }, []);
-  const helmetContext = {};
+  
   return (
     <>
     
-      <Router>
+      <BrowserRouter>
         <div className="App">
-          <Switch>
+          <Routes>
             <Route path="/thanku">
               <Header />
 
               <Thanku />
             </Route>
-            <Route path="/Payment">
+            <Route path="/Payment" element={<Elements stripe={stripePromise}>
+                <Payment />
+              </Elements>}>
               <Header />
               {/* wraps the payment elements,
           no need to understand it */}
-              <Elements stripe={stripePromise}>
-                <Payment />
-              </Elements>
             </Route>
             <Route path="/login">
               <Login />
@@ -110,10 +109,10 @@ function App() {
               <Home text={searchField} />
               <AllCategories />
             </Route>
-          </Switch>
+          </Routes>
           <Footer />
         </div>
-      </Router>
+        </BrowserRouter>
     </>
   );
 }
