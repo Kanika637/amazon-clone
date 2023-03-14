@@ -1,9 +1,9 @@
 import React from 'react'
 import "./footer.css"
 import { useState } from 'react';
-import Divider from '@material-ui/core/Divider';
+// import Divider from '@material-ui/core/Divider';
 
-import amnLogo from '../src/assets/amazon-logo.png';
+import amnLogo from '../../assets/amazon-logo.png';
 
 import logo from './amazon-logo.png';
 

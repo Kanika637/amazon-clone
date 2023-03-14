@@ -1,7 +1,7 @@
 import React, { useEffect, useState } from 'react';
 import Header from './components/header/Header';
 import Home from './pages/home/Home';
-import { BrowserRouter as Router, Switch, Route } from 'react-router-dom';
+import { BrowserRouter, Routes, Route } from 'react-router-dom';
 import Checkout from './components/checkOut/Checkout';
 import Login from './pages/login/Login';
 import { auth } from './firebase';
@@ -24,7 +24,7 @@ const stripePromise = loadStripe(
 );
 function App() {
   //to keep a check who is signed in/making a listner
-  const [{}, dispatch] = useStateValue();
+  const [{ }, dispatch] = useStateValue();
   //This State will keep Track of what is entered in the searchField
   const [searchField, setSearchField] = useState('');
 
@@ -55,65 +55,56 @@ function App() {
       }
     });
   }, []);
-  const helmetContext = {};
+
   return (
     <>
-    
-      <Router>
-        <div className="App">
-          <Switch>
-            <Route path="/thanku">
-              <Header />
 
+      <BrowserRouter>
+        <div className="App">
+          <Routes>
+            <Route path="/thanku" element={<>
+              <Header />
               <Thanku />
-            </Route>
-            <Route path="/Payment">
+            </>} />
+            <Route path="/Payment" element={<>
               <Header />
               {/* wraps the payment elements,
           no need to understand it */}
               <Elements stripe={stripePromise}>
                 <Payment />
               </Elements>
-            </Route>
-            <Route path="/login">
-              <Login />
-            </Route>
-            <Route path="/signup">
-              <Signup />
-            </Route>
-            <Route path="/checkout">
-              <Header />
-              <Checkout />
-            </Route>
+            </>} />
 
-            <Route path="/books-toys">
+            <Route path="/login" element={<Login />} />
+            <Route path="/signup" element={<Signup />} />
+            <Route path="/checkout" element={<>
               <Header />
+              <Checkout /></>} />
+            <Route path="/books-toys" element={<> <Header />
               <Navbar />
-              <BookToys />
-            </Route>
-
-            <Route path="/fashion-beauty">
+              <BookToys /></>} />
+            <Route path="/fashion-beauty" element={<>
               <Header />
               <Navbar />
               <FashionBeauty />
-            </Route>
+            </>} />
 
-            <Route path="/electronics">
+            <Route path="/electronics" element={<>
               <Header />
               <Navbar />
               <Electronics />
-            </Route>
+            </>} />
 
-            <Route path="/">
+            <Route path="/" element={<>
               <Header inputHandler={inputHandler} />
               <Navbar />
               <Home text={searchField} />
               <AllCategories />
-            </Route>
-          </Switch>
+            </>} />
+          </Routes>
           <Footer />
         </div>
-      </Router>
+      </BrowserRouter>
     </>
   );
 }

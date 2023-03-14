@@ -1,10 +1,10 @@
 import React,{useState} from 'react'
 import "./Signup.css"
-import {Link, useHistory} from "react-router-dom";
+import {Link, useNavigate} from "react-router-dom";
 import {auth} from "../../firebase";
 function Signup() {
     const anchLink=`https://amazon.in/gp/help/customer/display.html/ref=ap_signin_notification_condition_of_use?ie=UTF8&nodeId=200545940`;
-    const history=useHistory();
+    const navigate=useNavigate();
     const [name,setName]=useState('')
     const[email,setEmail]=useState('');
     const[password,setPassword]=useState('');
@@ -44,7 +44,7 @@ function Signup() {
         .then((auth)=>{
             console.log(auth);
             if(auth){
-                history.push("/")
+                navigate("/")
             }
         })
         .catch(error=>alert(error.message))

@@ -4,12 +4,12 @@ import './Subtotal.css'
 import CurrencyFormat from "react-currency-format";
 import { useStateValue } from "../../context/StateProvider";
 import { getBasketTotal } from "../../reducer/reducer";
-import { useHistory } from "react-router-dom";
+import { useNavigate } from "react-router-dom";
 import { ReactComponent as TickSvg } from "../../assets/tick.svg";
 
 function Subtotal() {
     //provide browser history
-    const history = useHistory();
+    const navigate = useNavigate();
     const [{ basket }, dispatch] = useStateValue();
     return (
         <div className="subtotal">
@@ -37,7 +37,7 @@ function Subtotal() {
                 thousandSeprator={true}
                 prefix={"₹ "}
             />
-            <button onClick={e => history.push("/payment")} className="proceed__button">Proceed to Buy</button>
+            <button onClick={e => navigate("/payment")} className="proceed__button">Proceed to Buy</button>
         </div>
     );
 }
