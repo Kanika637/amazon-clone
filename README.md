@@ -1,6 +1,6 @@
 # Contributing to amazon clone
 
-Hurray!, you're here!✨. This is the first step in making your contribution to the amazon clone project. This documentation will serve as a guide for making your contibutions to this project. Follow the steps stated below carefully.
+Hurray!, you're here!✨. This is the first step in making your contribution to the amazon clone project. This documentation will serve as a guide for making your contributions to this project. Follow the steps stated below carefully.
 
 Finally, we can't wait to see your outstanding issues and pull requests. Welcome 😇❤
 
@@ -10,7 +10,7 @@ Finally, we can't wait to see your outstanding issues and pull requests. Welcome
 - [PR guidelines ](#pr)
 - [First Contribution](#first_contribution)
 - [How to open Issue](#issue)
-- [Gettin started](#get_started)
+- [Getting Started](#get_started)
 - [Raise PR](#raise_pr)
 - [Review](#review)
 - [Commit changes](#commit_changes)
@@ -18,9 +18,9 @@ Finally, we can't wait to see your outstanding issues and pull requests. Welcome
 
 # Ground Rules <a name = "rules"></a>
 
-Here at amazon clone, we welcome everyone to contribute to our project. You can contribute in several ways not just in code (E.g. Technical writing).
+Here at Amazon Clone, we welcome everyone to contribute to our project. You can contribute in several ways not just in code (E.g. Technical writing).
 
-Having numerous means of contributing means working with alot of individuals which is very good for the growth 📈 of the project but most times can lead to conflicting interests and point of views 👈👉. Below are set of rules 📖 that guide individuals participating in this project.
+Having numerous means of contributing means working with a lot of individuals which is very good for the growth 📈 of the project but most times can lead to conflicting interests and point of views 👈👉. Below are set of rules 📖 that guide individuals participating in this project.
 
 - Openness 👐. Collaboration is only possible if everyone is open to share ideas.
 - Respect 👨🏾‍🤝‍👨🏽. Having respect for everyone, their skills and opinions is paramount.
@@ -35,7 +35,7 @@ Having numerous means of contributing means working with alot of individuals whi
 
 Is this your first time contributing to an open source project? If yes, Welcome!!✨🎉💃🏾 Here is a [great tutorial](https://app.egghead.io/playlists/how-to-contribute-to-an-open-source-project-on-github) on how to contribute to an open source project.
 
-At this point you are ready to take on the world of open source contribution!!.
+At this point, you are ready to take on the world of open source contribution!!.
 
 You must have seen a bug or problem you can fix, this is when you open a new issue for that problem. Let's do it together.
 
@@ -65,7 +65,7 @@ You must have seen a bug or problem you can fix, this is when you open a new iss
 
 ![issues6](https://user-images.githubusercontent.com/63567230/186289012-575123a1-68a7-4fcd-a71a-9051a8ca11ff.JPG)
 
-Hurray, you just made added your first issue. The managers of amazon clone will now review your issue and you will either get assigned to the issue, have it closed or a comment will be dropped for you.
+Hurray, you just added your first issue. The managers of amazon clone will now review your issue and you will either get assigned to the issue, have it closed or a comment will be dropped for you.
 
 You have been assigned an issue 🥂 and are confused 😵 about where to go from here, follow this guide below to make your changes and pull request 🍾.
 
@@ -132,7 +132,7 @@ git checkout main
 git pull upstream main
 ```
 
-You can now update your branch from your local copy of main, and push it!. See how below. 👇
+You can now update your branch from your local copy of `main` and push your changes. See how below. 👇
 
 ```
 git add .
@@ -140,7 +140,7 @@ git commit -m "<your commit message>"
 git push origin <name-of-your-branch>
 ```
 
-Hurray!!, we are done with the hard part. Head to github to make the pull request Github will check for conflicts and if non is found, you can make the pull request and the mainteners of amazon clone will review your pull request to have it merged or make a comment on it.
+Great! The main setup process is now complete. Head to github to make the pull request Github will check for conflicts and if none is found, you can make the pull request and the maintainers of amazon clone will review your pull request to have it merged or make a comment on it.
 
 # Code review process <a name = "review"></a>
 
@@ -157,7 +157,7 @@ Amazon-clone has certain conventions that should be adopted when contributing.
 - Commit new features with `feat: ...` prefix
 - Commit changes to `package.json`, `.gitignore` and other meta files with `chore(filenamewithoutext): ...`
 - Commit changes to README files or comments with `docs: ...`
-- Cody style changes with `style: standard`
+- Code style changes with `style: standard`
 
 ## Thanks to all Contributors <a name = "contributors"></a>
 
@@ -165,4 +165,4 @@ Amazon-clone has certain conventions that should be adopted when contributing.
 <img src="https://contrib.rocks/image?repo=Kanika637/amazon-clone" /> 
 </a>
 
-## Don't forgot to give a ⭐ to the repo, if you learned something!
+## Don't forget to give a ⭐ to the repo, if you learned something!
