@@ -1,17 +1,15 @@
-import React from 'react'
-import Footer from '../footer/Footer'
-import Header from '../header/Header'
-import Navbar from '../navbar/Navbar'
+ import React from 'react';
+import Header from '../header/Header';
+import Footer from '../footer/Footer';
 
-const Layout = ({children}) => {
+const Layout = ({ children, inputHandler }) => {
   return (
-    <div>
-        <Header/>
-        <Navbar/>
-        {children}
-        <Footer/>
-    </div>
-  )
-}
+    <>
+      <Header inputHandler={inputHandler} />
+      {children}
+      <Footer />
+    </>
+  );
+};
 
-export default Layout
+export default Layout;
